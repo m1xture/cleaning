@@ -8,12 +8,14 @@ body {
   background-color: #fafafa;
 }
 button {
+  border: none;
+  background-color: transparent;
   cursor: pointer;
 }
 .container {
-  width: auto;
+  width: 1356px;
   margin-left: auto;
   margin-right: auto;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 14px;
+  padding-left: 14px;
 }
