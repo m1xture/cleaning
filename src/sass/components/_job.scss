@@ -1,0 +1,68 @@
+.job {
+  position: relative;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.job__title {
+  font-family: 'Playfair Display';
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 53px;
+  letter-spacing: 0%;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  max-width: 438px;
+  margin-left: auto;
+  margin-right: 390px;
+}
+
+.job__description {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0%;
+  text-align: right;
+  color: rgb(0, 0, 0);
+  margin-right: 200px;
+  margin-top: 30px;
+  z-index: 100;
+}
+
+.job__button {
+  display: block;
+  padding: 15px 50px;
+  border-radius: 10px;
+  border: none;
+  background: rgb(255, 239, 152);
+  color: rgb(25, 25, 25);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 25px;
+  letter-spacing: 0%;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: 200px;
+}
+
+.tips-elips-1 {
+  position: absolute;
+  top: -107px;
+  left: -485px;
+  width: 811px;
+  height: 811px;
+  border-radius: 50%;
+  border: 30px solid rgb(255, 245, 200);
+  z-index: -2;
+}
+
+.tips-elips-2 {
+  position: absolute;
+  top: 131px;
+  left: -206px;
+  width: 684px;
+  height: 684px;
+  border-radius: 50%;
+  border: 42px solid rgb(255, 252, 236);
+  z-index: -1;
+}
