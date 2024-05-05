@@ -1,0 +1,107 @@
+.offers {
+  padding-top: 60px;
+  background-color: rgb(255, 251, 230);
+}
+
+.offers .container {
+  display: flex;
+    gap: 400px;
+  //   align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.offers__title {
+  font-family: 'Playfair Display';
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 53px;
+  letter-spacing: 0%;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+
+.services-box {
+  margin-left: 100px;
+}
+
+.services__title {
+  font-family: 'Playfair Display';
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 43px;
+  letter-spacing: 0%;
+  color: rgb(0, 0, 0);
+}
+
+.services__list {
+  display: flex;
+  flex-direction: column;
+  list-style-type: disc;
+  margin-top: 30px;
+}
+
+.services__item {
+  width: 200px;
+}
+
+.services__description {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 250%;
+  letter-spacing: 0%;
+  text-align: left;
+  color: rgb(0, 0, 0);
+}
+
+.cleaners-box {
+}
+
+.cleaners__title {
+  font-family: 'Playfair Display';
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 43px;
+  letter-spacing: 0%;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+
+.cleaners__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  width: 700px;
+  margin-top: 30px;
+}
+
+.cleaners__item {
+  border-radius: 10px;
+  box-shadow: 0px 0px 26.7px 0px rgba(0, 0, 0, 0.05);
+  background: rgb(255, 255, 255);
+  width: 317px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 17px;
+  display: flex;
+  gap: 20px;
+}
+
+.cleaners-photo-box {
+  width: 75px;
+  height: 75px;
+  background-color: rgb(217, 217, 217);
+  border-radius: 50%;
+}
+
+.name__title {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 250%;
+  letter-spacing: 0%;
+  text-align: left;
+  color: rgb(0, 0, 0);
+}
+
+.offers-name-and-surname-box {
+}
