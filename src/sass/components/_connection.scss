@@ -1,0 +1,73 @@
+.connection {
+  background-color: $bgAccentColor;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.connection__title {
+  @extend %title;
+  margin-bottom: 15px;
+}
+
+.connection__subtitle {
+  @extend %text-large;
+  text-align: center;
+}
+
+.connection-block {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.connection__item {
+  margin-bottom: 30px;
+//   position: relative;
+  display: flex;
+  align-items: center;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+  &::before {
+    content: '';
+    display: block;
+    // position: absolute;
+    // top: 50%;
+    // bottom: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 37px;
+    height: 33px;
+  }
+  &:first-child::before {
+    background-image: url('../img/svg/Email.svg');
+  }
+  &:nth-child(2)::before {
+    background-image: url('../img/svg/Phone.svg');
+  }
+  &:nth-child(3)::before {
+    background-image: url('../img/svg/Instagram.svg');
+  }
+  &:nth-child(4)::before {
+    background-image: url('../img/svg/Facebook.svg');
+  }
+  &:nth-child(5)::before {
+    background-image: url('../img/svg/Xmessager.svg');
+  }
+  &:last-child::before {
+    background-image: url('../img/svg/Location.svg');
+  }
+}
+
+.connection__text {
+    @extend %text-large;
+    margin-left: 15px;
+}
+.connection__link {
+    @extend %text-large;
+    &:hover {
+        text-decoration: underline;
+    }
+}

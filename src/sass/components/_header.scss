@@ -1,0 +1,28 @@
+.header {
+  padding-top: 47px;
+}
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__list {
+  display: flex;
+}
+.header__item:first-child {
+  margin-right: 30px;
+}
+.header__btn {
+  border-radius: 10px;
+  color: $textSecondaryColor;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  padding: 10px 25px;
+}
+.header__btn--first {
+  outline: 1px solid $accentColor;
+}
+.header__btn--second {
+    background-color: $accentColor;
+}
