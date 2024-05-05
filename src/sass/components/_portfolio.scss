@@ -1,4 +1,4 @@
-.portfolio_title {
+.portfolio__title {
     color: rgb(0, 0, 0);
     font-family: Playfair Display;
     font-size: 32px;
@@ -9,13 +9,13 @@
     text-align: center;
 }
 
-.portfolio_navigation {
+.portfolio__navigation {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.portfolio_img {
+.portfolio__img {
     width: 885px;
     height: 498px;
     display: block;
@@ -23,7 +23,7 @@
     margin-top: 10px;
 }
 
-.portfolio_desing {
+.portfolio__design {
     width: 40px;
     position: absolute;
     height: 5px;
@@ -31,7 +31,7 @@
     background: rgb(255, 233, 118);
 }
 
-.portfolio_desing-2 {
+.portfolio__design--2 {
     position: absolute;
     width: 20px;
     height: 5px;
@@ -39,18 +39,18 @@
     background: rgb(207, 183, 61);
 }
 
-.portfolio_desing_list {
+.portfolio__design-list {
     display: flex;
     position: relative;
     top: 10px;
     justify-content: center;
 }
 
-.portfolio_desing_list li:not(:last-child) {
+.portfolio__design-list li:not(:last-child) {
     margin-right: 25px;
 }
 
-.portfolio_text {
+.portfolio__text {
     color: rgb(0, 0, 0);
     font-family: Quicksand;
     font-size: 18px;
@@ -60,19 +60,19 @@
     text-align: left;
 }
 
-.portfolio_list {
+.portfolio__list {
     margin-top: 90px;
     position: relative;
     left: 100px;
 }
 
-.portfolio_section {
+.portfolio {
     padding-top: 108px;
     padding-bottom: 100px;
     background: rgb(255, 251, 230);
 }
 
-.portfolio_button {
+.portfolio__button {
     width: 200px;
     height: 54px;
     /* Auto layout */

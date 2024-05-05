@@ -4,7 +4,7 @@
     background: rgb(255, 251, 230);
 }
 
-.reviews_title {
+.reviews__title {
     color: rgb(0, 0, 0);
     font-family: Playfair Display;
     font-size: 40px;
@@ -15,24 +15,49 @@
     margin-bottom: 30px;
 }
 
-.reviews_list {
+.reviews__list {
+    display: flex;
+}
+
+.reviews__item {
     position: relative;
-    /* Змінив absolute на relative */
     width: 429px;
     height: 269px;
     margin: 0 auto;
-    /* Додав цей рядок, щоб центрувати відносно батьківського елемента */
     box-shadow: 0px 0px 26.7px 0px rgba(0, 0, 0, 0.05);
     background: rgb(255, 255, 255);
 }
 
-.reviews_container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.reviews__item-img {
+    position: relative;
+    left: 25px;
+    top: 25px;
 }
 
-.star_list {
+.reviews__item-text {
+    position: relative;
+    left: 125px;
+    top: -45px;
+}
+
+.reviews__avatar {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+}
+
+.reviews__text,
+.reviews__text-last,
+.reviews__text-lorem {
+    color: rgb(0, 0, 0);
+    font-family: Quicksand;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 250%;
+    letter-spacing: 0%;
+}
+
+.reviews__star-list {
     position: relative;
     display: flex;
     justify-content: center;
@@ -40,60 +65,8 @@
     top: -25px;
 }
 
-.reviews_avatar {
-    width: 75px;
-    height: 75px;
-    border-radius: 50%;
-}
-
-.reviews_text {
-    color: rgb(0, 0, 0);
-    font-family: Quicksand;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 250%;
-    letter-spacing: 0%;
-}
-
-.reviews_text_last {
-    color: rgb(0, 0, 0);
-    font-family: Quicksand;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 250%;
-    letter-spacing: 0%;
-}
-
-.reviews_item_img {
-    position: relative;
-    top: 25px;
-    left: 25px;
-}
-
-.reviews_item {
-    position: relative;
-    left: 125px;
-    top: -50px;
-}
-
-.reviews_item_last {
-    position: relative;
-    left: 125px;
-    top: -50px;
-}
-
-.reviews_list_lorem {
-    position: relative;
-    left: 125px;
-    top: -50px;
-}
-
-.reviews_text_lorem {
+.reviews__text-lorem {
     width: 279px;
-    color: rgb(0, 0, 0);
-    font-family: Quicksand;
     font-size: 14px;
-    font-weight: 400;
     line-height: 150%;
-    letter-spacing: 0%;
 }
