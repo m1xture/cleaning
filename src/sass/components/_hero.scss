@@ -1,0 +1,38 @@
+/* Стилі для секції героя */
+
+.hero {
+    padding-top: 108px;
+    padding-bottom: 60px;
+}
+
+
+/* Стилі для заголовка героя */
+
+.hero__title {
+    color: rgb(0, 0, 0);
+    font-family: Playfair Display;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 53px;
+    letter-spacing: 0%;
+    /* Зсув заголовка вправо на 390px */
+    margin-left: 390px;
+}
+
+
+/* Стилі для тексту героя */
+
+.hero__text {
+    position: relative;
+    width: 871px;
+    color: rgb(0, 0, 0);
+    font-family: Quicksand;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-top: 10px;
+    /* Зсув тексту вправо на 200px */
+    left: 200px;
+}
