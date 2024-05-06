@@ -9,8 +9,8 @@
 /* Стилі для заголовка героя */
 
 .hero__title {
-    color: rgb(0, 0, 0);
-    font-family: Playfair Display;
+    color: $textColor;
+    font-family: "Playfair Display";
     font-size: 40px;
     font-weight: 400;
     line-height: 53px;
@@ -25,8 +25,8 @@
 .hero__text {
     position: relative;
     width: 871px;
-    color: rgb(0, 0, 0);
-    font-family: Quicksand;
+    color: $textColor;
+    font-family: "Quicksand";
     font-size: 16px;
     font-weight: 400;
     line-height: 150%;
