@@ -1,6 +1,6 @@
 .portfolio__title {
-    color: rgb(0, 0, 0);
-    font-family: Playfair Display;
+    color: $textColor;
+    font-family: "Playfair Display";
     font-size: 32px;
     font-weight: 400;
     line-height: 43px;
@@ -51,8 +51,8 @@
 }
 
 .portfolio__text {
-    color: rgb(0, 0, 0);
-    font-family: Quicksand;
+    color: $textColor;
+    font-family: "Quicksand";
     font-size: 18px;
     font-weight: 400;
     line-height: 30px;
@@ -62,8 +62,7 @@
 
 .portfolio__list {
     margin-top: 90px;
-    position: relative;
-    left: 100px;
+    margin-left: 100px;
 }
 
 .portfolio {

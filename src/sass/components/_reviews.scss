@@ -5,7 +5,7 @@
 }
 
 .reviews__title {
-    color: rgb(0, 0, 0);
+    color: $textColor;
     font-family: Playfair Display;
     font-size: 40px;
     font-weight: 400;
@@ -35,9 +35,8 @@
 }
 
 .reviews__item-text {
-    position: relative;
-    left: 125px;
-    top: -45px;
+    margin-left: 125px;
+    margin-top: -45px;
 }
 
 .reviews__avatar {
@@ -49,8 +48,8 @@
 .reviews__text,
 .reviews__text-last,
 .reviews__text-lorem {
-    color: rgb(0, 0, 0);
-    font-family: Quicksand;
+    color: $textColor;
+    font-family: "Quicksand";
     font-size: 16px;
     font-weight: 400;
     line-height: 250%;
@@ -58,11 +57,10 @@
 }
 
 .reviews__star-list {
-    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    top: -25px;
+    margin-top: 25px;
 }
 
 .reviews__text-lorem {
