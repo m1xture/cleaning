@@ -1,0 +1,135 @@
+.backdrop-order {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  backdrop-filter: blur(5px);
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.is-hidden-order {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.order__modal {
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  overflow: hidden;
+  width: 470px;
+  padding: 30px 25px;
+  //   backdrop-filter: blur(10px);
+  //   background-color: rgba(255, 255, 255, 0.5);
+}
+
+.order-modal-close__btn {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+}
+
+.order-modal-close__btn img {
+  width: 20px;
+  height: 20px;
+}
+
+.order-modal__title {
+  font-family: 'Playfair Display';
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 27px;
+  color: $textColor;
+  text-align: center;
+}
+
+.order-modal__form {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.order-modal__form label {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
+  color: $textColor;
+}
+
+.order-modal__input {
+  padding-top: 13px;
+  padding-bottom: 13px;
+  padding-left: 25px;
+  border-radius: 10px;
+  background-color: rgb(240, 240, 240);
+  border: none;
+  margin-top: 10px;
+
+  &::placeholder {
+    color: rgb(183, 183, 183);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: left;
+  }
+}
+
+.order-modal__select {
+  padding-top: 13px;
+  padding-bottom: 13px;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-radius: 10px;
+  background-color: rgb(240, 240, 240);
+  border: none;
+  margin-top: 10px;
+}
+
+.order-modal-phone-box {
+  display: flex;
+  margin-top: 25px;
+}
+
+.order-modal__textarea {
+  border-radius: 10px;
+  background: rgb(240, 240, 240);
+  padding-top: 13px;
+  padding-bottom: 60px;
+  padding-left: 25px;
+  margin-top: 10px;
+  border: none;
+
+  &::placeholder {
+    color: rgb(183, 183, 183);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: left;
+  }
+}
+
+.order-modal-margin__label {
+  margin-top: 25px;
+}
+
+.order-modal-send__btn {
+  display: block;
+  padding: 10px 25px;
+  border-radius: 10px;
+  background-color: $accentColor;
+  width: 145px;
+  color: $textSecondaryColor;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+}
