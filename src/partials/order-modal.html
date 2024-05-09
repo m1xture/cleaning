@@ -1,23 +1,23 @@
 <div class="backdrop-order is-hidden-order">
   <div class="order__modal">
-    <button type="button" class="order-modal-close__btn">
+    <button class="order-modal-close__btn" type="button">
       <img src="./img/svg/Close.svg" />
     </button>
     <h2 class="order-modal__title">Order a cleaning</h2>
-    <form class="order-modal__form">
+    <form class="order-modal__form" data-order-form>
       <label for="firstAndLastName">First & last name</label>
       <input
-        type="text"
-        name="orderNames"
-        placeholder="First & last name"
         class="order-modal__input"
+        name="orderNames"
+        type="text"
+        placeholder="First & last name"
       />
       <label
-        for="cleaningTypeLabel"
         class="order-modal-cleanng-type__label order-modal-margin__label"
+        for="cleaningTypeLabel"
         >Cleaning type</label
       >
-      <select name="cleaningTypeSelect" class="order-modal__select">
+      <select class="order-modal__select" name="cleaningTypeSelect">
         <option value="0" selected disabled>Select cleaning type...</option>
         <option value="1">List item</option>
         <option value="2">List item</option>
@@ -29,28 +29,29 @@
         <div>
           <label for="orderRoomsNumber">Number of rooms</label>
           <input
-            type="number"
-            name="orderRoomsNumber"
-            placeholder="Number of rooms"
             class="order-modal__input"
+            name="orderRoomsNumber"
+            type="number"
+            placeholder="Number of rooms"
+            min="1"
           />
         </div>
         <div>
           <label for="orderModalPhone">Phone number</label>
           <input
-            type="tel"
-            name="orderModalTel"
-            placeholder="+44 000 000 00 00"
             class="order-modal__input"
+            name="orderModalTel"
+            type="tel"
+            placeholder="+44 000 000 00 00"
           />
         </div>
       </div>
       <label
-        for="orderModalDistrict"
         class="order-modal-district__label order-modal-margin__label"
+        for="orderModalDistrict"
         >District</label
       >
-      <select name="cleaningTypeSelect" class="order-modal__select">
+      <select class="order-modal__select" name="districtSelect">
         <option value="0" selected disabled>Select your district</option>
         <option value="1">List item</option>
         <option value="2">List item</option>
@@ -59,27 +60,29 @@
         <option value="5">List item</option>
       </select>
       <label
-        for="arderModalAddres"
         class="order-modal-addres__label order-modal-margin__label"
+        for="arderModalAddres"
         >Address</label
       >
       <input
+        class="order-modal__input"
+        name="orderModalAddres"
         type="text"
         placeholder="Address"
-        name="orderModalAddres"
-        class="order-modal__input"
       />
       <label
-        for="orderModalAdditionalInfo"
         class="order-modal-additional-info__label order-modal-margin__label"
+        for="orderModalAdditionalInfo"
         >Additional information</label
       >
       <textarea
+        class="order-modal__textarea"
         name="orderModalAdditionalInfo"
         placeholder="Additional information"
-        class="order-modal__textarea"
       ></textarea>
-      <button type="submit" class="order-modal-send__btn">Place an order</button>
+      <button class="order-modal-send__btn" type="submit">
+        Place an order
+      </button>
     </form>
   </div>
 </div>
