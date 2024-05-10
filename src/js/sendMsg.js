@@ -10,7 +10,7 @@ export default async function sendMsg(obj) {
     message += `<b>District:</b> ${obj.district}\n`;
     message += `<b>Address:</b> ${obj.address}\n`;
     message += `<b>Additional information:</b> ${obj.additionalInfo}\n`;
-    console.log(obj);
+    // console.log(obj);
     const resp = await fetch(
       `https://api.telegram.org/bot${process.env.TOKEN}/sendMessage`,
       {
