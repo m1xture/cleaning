@@ -108,13 +108,17 @@
     border-radius: 10px;
     backdrop-filter: blur(10px);
     background: rgba(255, 255, 255, 0.1);
-    padding: 20px; // Додатковий відступ для тексту
-    display: none; // По замовчуванню ховаємо додатковий текст
+    padding: 20px;
+    opacity: 0;
+    /* По замовчуванню текст невидимий */
+    transition: opacity 0.5s ease;
+    /* Анімація з'явлення */
     z-index: 1;
 }
 
 .cleaners__item:hover .additional-text {
-    display: block; // Показуємо додатковий текст при наведенні на картку
+    opacity: 1;
+    /* При ховері текст з'являється */
 }
 
 .name__title-hover {

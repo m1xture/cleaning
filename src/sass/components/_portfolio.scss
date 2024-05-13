@@ -16,29 +16,38 @@
 }
 
 .portfolio__img {
+    display: none;
     width: 885px;
     height: 498px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.portfolio__img.active {
     display: block;
-    margin: 0 auto;
-    margin-top: 10px;
+    transform: translateX(0%);
+}
+
+.portfolio__img.next {
+    display: block;
+    transform: translateX(100%);
+}
+
+.portfolio__img.prev {
+    display: block;
+    transform: translateX(-100%);
 }
 
 .portfolio__design {
-    width: 40px;
-    position: absolute;
-    height: 5px;
-    border-radius: 10px;
-    background: $controllerActive;
-    /* змінив колір */
-}
-
-.portfolio__design--2 {
-    position: absolute;
     width: 20px;
+    position: absolute;
     height: 5px;
     border-radius: 10px;
     background: $controllerUnactive;
-    /* змінив колір */
+    transition: all 0.5s ease-in-out; // Додано для плавної зміни розміру та кольору
+}
+
+.portfolio__design.active {
+    background: $controllerActive;
 }
 
 .portfolio__design-list {
@@ -46,15 +55,6 @@
     position: relative;
     top: 10px;
     justify-content: center;
-}
-
-.portfolio__design-list li:first-child .portfolio__design--2 {
-    width: 40px;
-    height: 5px;
-    border-radius: 10px;
-    background: $controllerActive;
-    /* змінив колір */
-    margin-left: -20px;
 }
 
 .portfolio__design-list li:not(:last-child) {
@@ -80,22 +80,18 @@
     padding-top: 108px;
     padding-bottom: 100px;
     background: $bgAccentColor;
-    /* змінив колір */
 }
 
 .portfolio__button {
     width: 200px;
     height: 54px;
-    /* Auto layout */
     border-radius: 10px;
     display: flex;
     align-items: center;
     text-align: center;
     justify-content: center;
     background: $accentColor;
-    /* змінив колір */
     color: $textSecondaryColor;
-    /* змінив колір */
     font-family: Quicksand;
     font-size: 20px;
     font-weight: 500;
