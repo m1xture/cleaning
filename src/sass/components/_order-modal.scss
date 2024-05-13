@@ -45,12 +45,7 @@
 }
 
 .order-modal__title {
-  font-family: 'Playfair Display';
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 27px;
-  color: $textColor;
-  text-align: center;
+  @extend %modal-title;
 }
 
 .order-modal__form {
@@ -60,28 +55,11 @@
 }
 
 .order-modal__form label {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 18px;
-  text-align: left;
-  color: $textColor;
+  @extend %modal-label;
 }
 
 .order-modal__input {
-  padding-top: 13px;
-  padding-bottom: 13px;
-  padding-left: 25px;
-  border-radius: 10px;
-  background-color: rgb(240, 240, 240);
-  border: none;
-  margin-top: 10px;
-  &::placeholder {
-    color: rgb(183, 183, 183);
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 18px;
-    text-align: left;
-  }
+  @extend %modal-input;
 }
 
 .order-modal__select {
