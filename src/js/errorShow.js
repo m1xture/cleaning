@@ -6,7 +6,11 @@ export default function showError(inputType) {
     phone: document.querySelector('[name=orderModalTel]'),
     district: document.querySelector('[name=districtSelect]'),
     address: document.querySelector('[name=orderModalAddres]'),
+    email: document.querySelector('[data-input=cleaner-email]'),
+    phone: document.querySelector('[data-input=cleaner-phone]'),
+    password: document.querySelector('[data-input=cleaner-password]'),
+    usernameCleaner: document.querySelector('[data-input=cleaner-username]'),
   };
-  console.log(inputs)
+  console.log(inputs);
   inputs[inputType].classList.add('order__input--error');
 }

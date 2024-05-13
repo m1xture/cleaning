@@ -1,10 +1,18 @@
 <div class="cleaner cleaner--hidden" data-cleaner-backdrop>
   <div class="cleaner-modal">
-    <button class="cleaner__close-btn" type="button" data-cleaner-close-btn="true">
-      <img src="./img/svg/Close.svg" alt="close icon" data-cleaner-close-btn="true" />
+    <button
+      class="cleaner__close-btn"
+      type="button"
+      data-cleaner-close-btn="true"
+    >
+      <img
+        src="./img/svg/Close.svg"
+        alt="close icon"
+        data-cleaner-close-btn="true"
+      />
     </button>
     <h2 class="cleaner__title">Create a cleaner account</h2>
-    <form class="cleaner__form">
+    <form class="cleaner__form" data-form="cleaner">
       <ul class="cleaner__list">
         <li class="cleaner__item">
           <label class="cleaner__label">First & last name</label
@@ -13,6 +21,7 @@
             name="names"
             type="text"
             placeholder="First & last name"
+            data-input="cleaner-username"
           />
         </li>
         <li class="cleaner__item">
@@ -22,6 +31,7 @@
             name="email"
             type="text"
             placeholder="E-Mail"
+            data-input="cleaner-email"
           />
         </li>
         <li class="cleaner__item">
@@ -31,6 +41,7 @@
             name="phone"
             type="text"
             placeholder="Phone number"
+            data-input="cleaner-phone"
           />
         </li>
         <li class="cleaner__item">
@@ -40,6 +51,7 @@
             name="password"
             type="password"
             placeholder="Password"
+            data-input="cleaner-password"
           />
         </li>
       </ul>
