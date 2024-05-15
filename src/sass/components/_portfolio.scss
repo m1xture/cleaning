@@ -16,25 +16,10 @@
 }
 
 .portfolio__img {
-    display: none;
-    width: 885px;
-    height: 498px;
-    transition: transform 0.5s ease-in-out;
-}
-
-.portfolio__img.active {
-    display: block;
-    transform: translateX(0%);
-}
-
-.portfolio__img.next {
-    display: block;
-    transform: translateX(100%);
-}
-
-.portfolio__img.prev {
-    display: block;
-    transform: translateX(-100%);
+    width: 785px;
+    height: 398px;
+    margin: 0 auto; // додано для центрування зображення
+    display: block; // додано для того, щоб margin: auto працював
 }
 
 .portfolio__design {
@@ -98,4 +83,20 @@
     line-height: 25px;
     letter-spacing: 0%;
     margin-top: 10px;
+}
+
+.swiper {
+    width: 1005px;
+    height: 498px;
+    z-index: 100000;
+    margin-top: 60px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    z-index: 100000;
+    --swiper-navigation-top-offset: 40%;
+    --swiper-navigation-sides-offset: 10px;
+    --swiper-navigation-size: 55px;
+    --swiper-navigation-color: var(--swiper-theme-color);
 }

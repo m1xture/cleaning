@@ -4,4 +4,5 @@ import './js/order-modal';
 import './js/cleanerToggle';
 import './js/orderHandling';
 import './js/cleanerHandling';
-import './js/portfolio';
+
+import './js/swiper-init';
