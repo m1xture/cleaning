@@ -1,35 +1,45 @@
 <section class="portfolio">
     <div class="container">
         <h1 class="portfolio__title">Our portfolio</h1>
-        <div class="portfolio__navigation">
-            <img class="portfolio__arrow portfolio__arrow--left" src="./img/arrows/left.svg" alt="left" />
-            <img class="portfolio__img active" src="./img/portfolio-pictures-1.jpg" alt="house-cleaning" />
-            <img class="portfolio__img" src="./img/portfolio-pictures-2.jpg" alt="house-cleaning" />
-            <img class="portfolio__img" src="./img/portfolio-pictures-3.jpg" alt="house-cleaning" />
-            <img class="portfolio__img" src="./img/portfolio-pictures-4.jpg" alt="house-cleaning" />
-            <img class="portfolio__img" src="./img/portfolio-pictures-5.jpg" alt="house-cleaning" />
-            <img class="portfolio__img" src="./img/portfolio-pictures-7.jpg" alt="house-cleaning" />
-            <img class="portfolio__arrow portfolio__arrow--right" src="./img/arrows/right.svg" alt="right" />
+
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img class="portfolio__img" src="./img/portfolio-pictures-1.jpg" alt="шось там"></div>
+                <div class="swiper-slide"><img class="portfolio__img" src="./img/portfolio-pictures-2.jpg" alt="шось там"></div>
+                <div class="swiper-slide"><img class="portfolio__img" src="./img/portfolio-pictures-3.jpg" alt="шось там"></div>
+                <div class="swiper-slide"><img class="portfolio__img" src="./img/portfolio-pictures-4.jpg" alt="шось там"></div>
+                <div class="swiper-slide"><img class="portfolio__img" src="./img/portfolio-pictures-5.jpg" alt="шось там"></div>
+                <div class="swiper-slide"><img class="portfolio__img" src="./img/portfolio-pictures-7.jpg" alt="шось там"></div>
+
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"> </div>
+            <div class="swiper-button-next"> </div>
+
+            <!-- If we need scrollbar -->
+
+
         </div>
-        <ul class="portfolio__design-list">
-            <li><span class="portfolio__design portfolio__design--1"></span></li>
-            <li><span class="portfolio__design portfolio__design--2"></span></li>
-            <li><span class="portfolio__design portfolio__design--3"></span></li>
-            <li><span class="portfolio__design portfolio__design--4"></span></li>
-            <li><span class="portfolio__design portfolio__design--5"></span></li>
-            <li><span class="portfolio__design portfolio__design--6"></span></li>
-        </ul>
-        <ul class="portfolio__list">
-            <li>
-                <p class="portfolio__text">
-                    Feeling lazy or need a quick clean-up? You’re welcome to order a cleaning!
-                </p>
-            </li>
-            <li>
-                <button class="portfolio__button" type="button">
+    </div>
+
+
+    <ul class="portfolio__list">
+        <li>
+            <p class="portfolio__text">
+                Feeling lazy or need a quick clean-up? You’re welcome to order a cleaning!
+            </p>
+        </li>
+        <li>
+            <button class="portfolio__button" type="button">
                     Order a cleaning
                 </button>
-            </li>
-        </ul>
+        </li>
+    </ul>
     </div>
 </section>
