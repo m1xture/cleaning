@@ -1,5 +1,5 @@
 import validateOrder from './orderValidation';
-import sendMsg from './sendMsg';
+import sendMsg from './orderSendMsg';
 
 const refs = {
   formEl: document.querySelector('[data-order-form]'),
