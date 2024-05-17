@@ -6,3 +6,5 @@ import './js/orderHandling';
 import './js/cleanerHandling';
 
 import './js/swiper-init';
+
+import './js/reviews'
