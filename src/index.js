@@ -1,10 +1,8 @@
 import './js/offers';
 import './js/tips';
-import './js/order-modal';
-import './js/cleanerToggle';
-import './js/orderHandling';
-import './js/cleanerHandling';
-
+import './js/order/orderToggle';
+import './js/cleaner/cleanerToggle';
+import './js/order/orderHandling';
+import './js/cleaner/cleanerHandling';
 import './js/swiper-init';
-
-import './js/reviews'
+import './js/reviews';

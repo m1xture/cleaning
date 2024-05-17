@@ -1,4 +1,4 @@
-import showError from './errorShow';
+import showError from '../errorShow';
 
 export default function validateCleaner({ username, email, phone, password }) {
   let errors = 0;
