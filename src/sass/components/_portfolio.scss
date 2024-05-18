@@ -87,7 +87,7 @@
 .swiper {
   width: 1005px;
   height: 498px;
-  //   z-index: 100000;
+  z-index: 0;
   margin-top: 60px;
 }
 
@@ -101,23 +101,23 @@
 }
 
 .swiper-pagination-bullet {
-  width: 20px !important;
-  height: 5px !important;
-  border-radius: 10px !important;
-  background-color: rgb(131, 113, 20) !important;
+  width: 20px;
+  height: 5px;
+  border-radius: 10px;
+  background-color: rgb(131, 113, 20);
 }
 
 .swiper-pagination-bullet-active {
-  width: 40px !important;
-  height: 5px !important;
-  border-radius: 10px !important;
-  background-color: rgb(255, 233, 118) !important;
+  width: 40px;
+  height: 5px;
+  border-radius: 10px;
+  background-color: rgb(255, 233, 118);
 }
 
 .swiper-button-prev {
-  color: rgb(25, 25, 25) !important;
+  color: rgb(25, 25, 25);
 }
 
 .swiper-button-next {
-  color: rgb(25, 25, 25) !important;
+  color: rgb(25, 25, 25);
 }
