@@ -7,7 +7,7 @@ export default function showError(inputType) {
     district: document.querySelector('[name=districtSelect]'),
     address: document.querySelector('[name=orderModalAddres]'),
     email: document.querySelector('[data-input=cleaner-email]'),
-    phone: document.querySelector('[data-input=cleaner-phone]'),
+    phoneCleaner: document.querySelector('[data-input=cleaner-phone]'),
     password: document.querySelector('[data-input=cleaner-password]'),
     usernameCleaner: document.querySelector('[data-input=cleaner-username]'),
   };
