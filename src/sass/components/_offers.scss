@@ -1,149 +1,157 @@
 .offers {
-    padding-top: 60px;
-    background-color: $bgAccentColor;
+  padding-top: 60px;
+  background-color: $bgAccentColor;
 }
 
 .offers .container {
-    display: flex;
-    gap: 400px;
-    justify-content: center;
-    margin-top: 30px;
+  display: flex;
+  //   gap: 400px;
+  justify-content: center;
+  margin-top: 30px;
 }
 
 .offers__title {
-    @extend %title
+  @extend %title;
 }
 
+// .services-box {
+    
+// }
+
 .services__title {
-    font-family: 'Playfair Display';
-    font-size: 32px;
-    font-weight: 400;
-    line-height: 43px;
-    letter-spacing: 0%;
-    color: $textColor;
+  font-family: 'Playfair Display';
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 43px;
+  letter-spacing: 0%;
+  color: $textColor;
 }
 
 .services__list {
-    display: flex;
-    flex-direction: column;
-    list-style-type: disc;
-    margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  list-style-type: disc;
+  margin-top: 30px;
 }
 
-.services__item {
-    width: 200px;
-}
+// .services__item {
+//   width: 200px;
+// }
 
 .services__description {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 250%;
-    letter-spacing: 0%;
-    text-align: left;
-    color: $textColor;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 250%;
+  letter-spacing: 0%;
+  text-align: left;
+  color: $textColor;
+}
+
+.cleaners-box {
+  margin-left: auto;
 }
 
 .cleaners__title {
-    font-family: 'Playfair Display';
-    font-size: 32px;
-    font-weight: 400;
-    line-height: 43px;
-    letter-spacing: 0%;
-    text-align: center;
-    color: $textColor;
+  font-family: 'Playfair Display';
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 43px;
+  letter-spacing: 0%;
+  text-align: center;
+  color: $textColor;
 }
 
 .cleaners__list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    width: 700px;
-    margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  width: 700px;
+  margin-top: 30px;
 }
 
 .cleaners__item {
-    border-radius: 10px;
-    box-shadow: $boxShadow;
-    background-color: rgb(255, 255, 255);
-    width: 317px;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    padding-left: 17px;
-    display: flex;
-    gap: 20px;
+  border-radius: 10px;
+  box-shadow: $boxShadow;
+  background-color: rgb(255, 255, 255);
+  width: 317px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 17px;
+  display: flex;
+  gap: 20px;
 }
 
 .cleaners-photo-box {
-    width: 75px;
-    height: 75px;
-    background-color: rgb(217, 217, 217);
-    border-radius: 50%;
+  width: 75px;
+  height: 75px;
+  background-color: rgb(217, 217, 217);
+  border-radius: 50%;
 }
 
 .name__title {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 250%;
-    letter-spacing: 0%;
-    text-align: left;
-    color: $textColor;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 250%;
+  letter-spacing: 0%;
+  text-align: left;
+  color: $textColor;
 }
 
 .cleaners__item {
-    position: relative; // Додаємо позиціонування, щоб можна було відноситися до дочірнього елемента з позиціонуванням.
+  position: relative; // Додаємо позиціонування, щоб можна було відноситися до дочірнього елемента з позиціонуванням.
 }
 
 .additional-text {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 390px;
-    height: 351px;
-    box-sizing: border-box;
-    pointer-events: none;
-    border: 1px solid rgb(0, 0, 0);
-    border-radius: 10px;
-    backdrop-filter: blur(10px);
-    background: rgba(255, 255, 255, 0.1);
-    padding: 20px;
-    opacity: 0;
-    /* По замовчуванню текст невидимий */
-    transition: opacity 0.5s ease;
-    /* Анімація з'явлення */
-    z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 390px;
+  height: 351px;
+  box-sizing: border-box;
+  pointer-events: none;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  opacity: 0;
+  /* По замовчуванню текст невидимий */
+  transition: opacity 0.5s ease;
+  /* Анімація з'явлення */
+  z-index: 1;
 }
 
 .cleaners__item:hover .additional-text {
-    opacity: 1;
-    /* При ховері текст з'являється */
+  opacity: 1;
+  /* При ховері текст з'являється */
 }
 
 .name__title-hover {
-    position: relative;
-    margin-left: 170px;
-    top: -100px
+  position: relative;
+  margin-left: 170px;
+  top: -100px;
 }
 
 .cleaners-photo-box-hover {
-    width: 125px;
-    height: 125px;
+  width: 125px;
+  height: 125px;
 }
 
 .container_title-hover {
-    margin-top: -50px;
+  margin-top: -50px;
 }
 
 .title-hover {
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 250%;
-    letter-spacing: 0%;
-    text-align: left;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 250%;
+  letter-spacing: 0%;
+  text-align: left;
 }
 
 .offers__star-list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: -15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: -15px;
 }
