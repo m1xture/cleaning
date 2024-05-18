@@ -14,7 +14,7 @@ export default function validateCleaner({ username, email, phone, password }) {
 
   if (phone.length < 9) {
     errors++;
-    showError('phone');
+    showError('phoneCleaner');
   }
 
   if (password.length < 8 || password.length > 24) {
