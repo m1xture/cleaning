@@ -66,14 +66,11 @@
     gap: 10px;
 }
 
-.reviews__star-2:hover svg path,
-.reviews__star-3:hover svg path {
+.reviews__star svg path {
     transition: fill 0.3s ease;
 }
 
-.reviews__star:hover svg path,
-.reviews__star:hover .reviews__star-2:hover svg path,
-.reviews__star:hover .reviews__star-3:hover svg path {
+.reviews__star:hover svg path {
     fill: yellow;
 }
 
