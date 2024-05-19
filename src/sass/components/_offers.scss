@@ -83,9 +83,18 @@
 
 .cleaners-photo-box {
   width: 75px;
+  overflow: hidden;
   height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: rgb(217, 217, 217);
+  // background-position: center;
+  // background-image: url(../img/IMG_20240519_130958_848.jpg);
   border-radius: 50%;
+  & img {
+    width: 175px;
+  }
 }
 
 .name__title {
@@ -98,7 +107,7 @@
 }
 
 .cleaners__item {
-  position: relative; // Додаємо позиціонування, щоб можна було відноситися до дочірнього елемента з позиціонуванням.
+  position: relative;
 }
 
 .additional-text {
@@ -147,8 +156,13 @@
   line-height: 250%;
   letter-spacing: 0%;
   text-align: left;
+  display: inline;
 }
-
+.cleaners__subtext {
+  font-size: 14px;
+  line-height: 1,1;
+  display: inline;
+}
 .offers__star-list {
   display: flex;
   justify-content: center;
