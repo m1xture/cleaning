@@ -1,81 +1,82 @@
 .reviews {
-    padding-top: 108px;
-    padding-bottom: 100px;
-    background: rgb(255, 251, 230);
+  padding-top: 108px;
+  padding-bottom: 100px;
+  background: rgb(255, 251, 230);
 }
 
 .reviews__title {
-    color: #333;
-    /* Example color */
-    font-family: 'Playfair Display', serif;
-    font-size: 40px;
-    font-weight: 400;
-    line-height: 53px;
-    text-align: center;
-    margin-bottom: 30px;
+  color: #333;
+  /* Example color */
+  font-family: 'Playfair Display', serif;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 53px;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 .reviews__list {
-    display: flex;
-    gap: 20px;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
 }
 
 .reviews__item {
-    position: relative;
-    width: 429px;
-    box-shadow: 0px 0px 26.7px 0px rgba(0, 0, 0, 0.05);
-    background: rgb(255, 255, 255);
-    border-radius: 10px;
-    padding-bottom: 25px;
+  position: relative;
+  width: 429px;
+  height: 363px;
+  box-shadow: 0px 0px 26.7px 0px rgba(0, 0, 0, 0.05);
+  background: rgb(255, 255, 255);
+  border-radius: 10px;
+  padding-bottom: 25px;
 }
 
 .reviews__item-img {
-    position: relative;
-    left: 25px;
-    top: 25px;
+  position: relative;
+  left: 25px;
+  top: 25px;
 }
 
 .reviews__item-text {
-    margin-left: 125px;
-    margin-top: -45px;
+  margin-left: 125px;
+  margin-top: -45px;
 }
 
 .reviews__avatar {
-    width: 75px;
-    height: 75px;
-    border-radius: 50%;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
 }
 
 .reviews__text,
 .reviews__text-last,
 .reviews__text-lorem {
-    color: #333;
-    /* Example color */
-    font-family: 'Quicksand', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 250%;
+  color: #333;
+  /* Example color */
+  font-family: 'Quicksand', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 250%;
 }
 
 .reviews__star-list {
-    display: flex;
-    margin-top: 25px;
-    margin-left: 130px;
-    gap: 10px;
+  display: flex;
+  margin-top: 25px;
+  margin-left: 130px;
+  gap: 10px;
 }
 
 .reviews__star svg path {
-    transition: fill 0.3s ease;
+  transition: fill 0.3s ease;
 }
 
 .reviews__star:hover svg path {
-    fill: yellow;
+  fill: yellow;
 }
 
 .reviews__text-lorem {
-    width: 279px;
-    font-size: 14px;
-    line-height: 150%;
+  width: 279px;
+  font-size: 14px;
+  line-height: 150%;
 }
