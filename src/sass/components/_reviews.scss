@@ -27,9 +27,12 @@
   width: 429px;
   height: 363px;
   box-shadow: 0px 0px 26.7px 0px rgba(0, 0, 0, 0.05);
-  background: rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
   border-radius: 10px;
   padding-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .reviews__item-img {
@@ -58,21 +61,19 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 250%;
+  // margin-bottom: 30px;
 }
 
 .reviews__star-list {
   display: flex;
-  margin-top: 25px;
-  margin-left: 130px;
+  // margin-top: 25px;
+  margin-top: auto;
+  margin-left: 125px;
   gap: 10px;
 }
 
 .reviews__star svg path {
   transition: fill 0.3s ease;
-}
-
-.reviews__star:hover svg path {
-  fill: yellow;
 }
 
 .reviews__text-lorem {
