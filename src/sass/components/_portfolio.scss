@@ -1,192 +1,200 @@
 .portfolio__title {
-  color: $textColor;
-  font-family: 'Playfair Display';
-  font-size: 32px;
-  font-weight: 400;
-  line-height: 43px;
-  letter-spacing: 0%;
-  justify-content: center;
-  text-align: center;
+    color: $textColor;
+    font-family: 'Playfair Display';
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 43px;
+    letter-spacing: 0%;
+    justify-content: center;
+    text-align: center;
 }
 
 .portfolio__navigation {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .portfolio__img {
-  width: 785px;
-  height: 398px;
-  margin: 0 auto; // додано для центрування зображення
-  display: block; // додано для того, щоб margin: auto працював
+    width: 785px;
+    height: 398px;
+    margin: 0 auto; // додано для центрування зображення
+    display: block; // додано для того, щоб margin: auto працював
 }
 
 .portfolio__design {
-  width: 20px;
-  position: absolute;
-  height: 5px;
-  border-radius: 10px;
-  background: $controllerUnactive;
-  transition: all 0.5s ease-in-out; // Додано для плавної зміни розміру та кольору
+    width: 20px;
+    position: absolute;
+    height: 5px;
+    border-radius: 10px;
+    background: $controllerUnactive;
+    transition: all 0.5s ease-in-out; // Додано для плавної зміни розміру та кольору
 }
 
 .portfolio__design.active {
-  background: $controllerActive;
+    background: $controllerActive;
 }
 
 .portfolio__design-list {
-  display: flex;
-  position: relative;
-  top: 10px;
-  justify-content: center;
+    display: flex;
+    position: relative;
+    top: 10px;
+    justify-content: center;
 }
 
 .portfolio__design-list li:not(:last-child) {
-  margin-right: 25px;
+    margin-right: 25px;
 }
 
 .portfolio__text {
-  color: $textColor;
-  font-family: 'Quicksand';
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 30px;
-  letter-spacing: 0%;
-  text-align: left;
+    color: $textColor;
+    font-family: 'Quicksand';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0%;
+    text-align: left;
 }
 
 .portfolio__list {
-  margin-top: 90px;
-  margin-left: 100px;
+    margin-top: 90px;
+    margin-left: 100px;
 }
 
 .portfolio {
-  padding-top: 108px;
-  padding-bottom: 100px;
-  background: $bgAccentColor;
+    padding-top: 108px;
+    padding-bottom: 100px;
+    background: $bgAccentColor;
 }
 
 .portfolio__button {
-  width: 200px;
-  height: 54px;
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-  background: $accentColor;
-  color: $textSecondaryColor;
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 25px;
-  letter-spacing: 0%;
-  margin-top: 10px;
+    width: 200px;
+    height: 54px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background: $accentColor;
+    color: $textSecondaryColor;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 25px;
+    letter-spacing: 0%;
+    margin-top: 10px;
 }
 
 .swiper {
-  width: 1005px;
-  height: 498px;
-  z-index: 0;
-  margin-top: 60px;
+    width: 1005px;
+    height: 498px;
+    z-index: 0;
+    margin-top: 60px;
 }
 
 .swiper-button-next,
 .swiper-button-prev {
-  z-index: 100000;
-  --swiper-navigation-top-offset: 40%;
-  --swiper-navigation-sides-offset: 10px;
-  --swiper-navigation-size: 55px;
-  --swiper-navigation-color: var(--swiper-theme-color);
+    z-index: 100000;
+    --swiper-navigation-top-offset: 40%;
+    --swiper-navigation-sides-offset: 10px;
+    --swiper-navigation-size: 55px;
+    --swiper-navigation-color: var(--swiper-theme-color);
 }
 
 .swiper-pagination-bullet {
-  width: 20px;
-  height: 5px;
-  border-radius: 10px;
-  background-color: rgb(131, 113, 20);
+    width: 20px;
+    height: 5px;
+    border-radius: 10px;
+    background-color: rgb(131, 113, 20);
 }
 
 .swiper-pagination-bullet-active {
-  width: 40px;
-  height: 5px;
-  border-radius: 10px;
-  background-color: rgb(255, 233, 118);
+    width: 40px;
+    height: 5px;
+    border-radius: 10px;
+    background-color: rgb(255, 233, 118);
 }
 
 .swiper-button-prev {
-  color: rgb(25, 25, 25);
+    color: rgb(25, 25, 25);
 }
 
 .swiper-button-next {
-  color: rgb(25, 25, 25);
+    color: rgb(25, 25, 25);
 }
 
 .portfolio-services-box {
-  display: flex;
-  gap: 300px;
-  align-items: center;
+    display: flex;
+    gap: 300px;
+    align-items: center;
 }
 
 .services-price-hover-box {
-  position: absolute;
-  top: 30px;
-  left: 0;
-  pointer-events: none;
-  border: 1px solid rgb(0, 0, 0);
-  border-radius: 10px;
-  backdrop-filter: blur(10px);
-  background-color: rgba(255, 255, 255, 0.1);
-  padding: 20px;
-  transition: opacity 0.5s ease;
-  z-index: 1;
-  opacity: 0;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    pointer-events: none;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    transition: opacity 0.5s ease;
+    z-index: 1;
+    opacity: 0;
 }
 
 .services__item {
-  position: relative;
-  display: flex;
-  align-items: center;
-  gap: 15px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
 
 .services-price-hover__text {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 250%;
-  text-align: left;
-  color: $textColor;
-}
-
-.services-price-hover__item {
-  position: relative;
-  display: flex;
-  align-items: center;
-  margin-left: 10px;
-
-  &::before {
-    content: '-';
-    display: block;
-    margin-left: -18px;
-  }
-
-  & p {
     font-size: 14px;
     font-weight: 400;
     line-height: 250%;
-    // text-align: left;
+    text-align: left;
     color: $textColor;
-  }
+}
+
+.services-price-hover__item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    &::before {
+        content: '-';
+        display: block;
+        margin-left: -18px;
+    }
+    & p {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 250%;
+        // text-align: left;
+        color: $textColor;
+    }
 }
 
 .services__item:hover .services-price-hover-box {
-  opacity: 1;
+    opacity: 1;
 }
 
 .services__description {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 250%;
-  text-align: left;
-  color: $textColor;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 250%;
+    text-align: left;
+    color: $textColor;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+    bottom: var(--swiper-pagination-bottom, 65px);
+    top: var(--swiper-pagination-top, auto);
+    left: 0;
+    width: 100%;
 }
