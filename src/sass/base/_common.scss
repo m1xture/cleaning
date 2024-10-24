@@ -1,6 +1,6 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -16,9 +16,19 @@ button {
 }
 
 .container {
-  width: 1356px;
   margin-left: auto;
   margin-right: auto;
-  padding-right: 14px;
-  padding-left: 14px;
+  width: 260px;
+
+  @media screen and (min-width: 814px) {
+    width: 814px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1356px;
+    padding-right: 14px;
+    padding-left: 14px;
+  }
 }
