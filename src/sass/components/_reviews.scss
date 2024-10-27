@@ -81,3 +81,77 @@
     font-size: 14px;
     line-height: 150%;
 }
+
+@media (max-width: 1200px) {
+    .reviews__list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .reviews__item {
+        width: 382px;
+        height: 248px;
+    }
+    .reviews__text,
+    .reviews__text-last {
+        font-size: 14px;
+    }
+    .reviews__text-lorem {
+        width: 232px;
+        font-size: 10px;
+    }
+    .review-star {
+        width: 20px;
+        height: 20px;
+    }
+    .reviews__title {
+        font-size: 24px;
+    }
+}
+
+
+/* Адаптивний вигляд для мобільних пристроїв */
+
+@media (max-width: 814px) {
+    .reviews__text-wrapper {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+    .reviews__avatar {
+        width: 30px;
+        height: 30px;
+    }
+    .reviews__item {
+        width: 260px;
+        height: 121px;
+    }
+    .reviews__text,
+    .reviews__text-last {
+        font-size: 10px;
+    }
+    .reviews__text-lorem {
+        width: 100%;
+        font-size: 6px;
+    }
+    .reviews__item-text {
+        margin-top: -20px;
+        margin-left: 55px;
+    }
+    .reviews__item-img {
+        position: relative;
+        top: 10px;
+        left: 15px;
+    }
+    .reviews__star-list {
+        display: flex;
+        justify-content: center;
+        margin-left: 0;
+        margin-top: 15px;
+        height: 30px;
+    }
+    .review-star {
+        width: 20px;
+        height: 20px;
+    }
+}

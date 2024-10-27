@@ -1,30 +1,12 @@
 .offers {
     padding-top: 60px;
+    padding-bottom: 60px;
     background-color: $bgAccentColor;
     min-height: 100vh; // Фон завжди повний
     .container {
         display: flex;
         justify-content: space-between;
         margin-top: 30px;
-        // Для планшетів (1024px і менше)
-        @media (max-width: 1024px) {
-            flex-direction: row;
-            justify-content: space-between; // Сервіси вправо, клієнти вліво
-        }
-        // Для мобільних пристроїв (768px і менше)
-        @media (max-width: 768px) {
-            flex-direction: column;
-            align-items: center; // Центрується
-            .services-box {
-                order: 1; // Серівіси зверху
-                text-align: center; // По центру
-            }
-            .cleaners-box {
-                order: 2; // Клієнти знизу
-                margin-top: 20px;
-                text-align: center; // По центру
-            }
-        }
     }
     .offers__title {
         font-family: 'Playfair Display';
@@ -37,27 +19,9 @@
     }
     .services-box {
         flex: 1;
-        @media (max-width: 1024px) {
-            text-align: right;
-        }
-        @media (max-width: 768px) {
-            margin-right: 0;
-            order: 1;
-            text-align: center; // Центруємо текст
-        }
     }
     .cleaners-box {
         flex: 1;
-        margin-left: auto;
-        @media (max-width: 1024px) {
-            margin-left: auto;
-        }
-        @media (max-width: 768px) {
-            margin-left: 0;
-            margin-top: 20px;
-            order: 2;
-            text-align: center; // Центруємо текст
-        }
     }
 }
 
@@ -69,17 +33,6 @@
     letter-spacing: 0%;
     color: $textColor;
     text-align: left; // За замовчуванням вирівнювання зліва
-    // Стилі для планшетів
-    @media (max-width: 1024px) {
-        font-size: 20px; // Планшетний розмір
-        line-height: 27px; // Планшетний рядок
-    }
-    // Стилі для мобільних пристроїв
-    @media (max-width: 768px) {
-        font-size: 10px; // Мобільний розмір
-        line-height: 13px; // Мобільний рядок
-        text-align: center; // Вирівнювання по центру
-    }
 }
 
 .services__list {
@@ -95,17 +48,6 @@
     line-height: 250%;
     text-align: left;
     color: $textColor;
-    @media (max-width: 1024px) {
-        font-size: 12px; // Розмір шрифту для планшетів
-        line-height: 250%; // Висота рядка для планшетів
-        text-align: left; // Вирівнювання по лівому краю для планшетів
-    }
-    // Стилі для мобільних пристроїв
-    @media (max-width: 768px) {
-        font-size: 8px; // Розмір шрифту для мобільних пристроїв
-        line-height: 250%; // Висота рядка для мобільних пристроїв
-        text-align: left; // Вирівнювання по лівому краю для мобільних пристроїв
-    }
 }
 
 .cleaners__title {
@@ -122,8 +64,9 @@
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    width: 700px;
     margin-top: 30px;
+    margin-left: 40px;
+    width: 700px;
 }
 
 .cleaners__item {
@@ -136,18 +79,6 @@
     padding-left: 17px;
     display: flex;
     gap: 20px;
-    // Ширина карток на планшетах
-    @media (max-width: 1024px) {
-        width: 248px;
-        height: 80px;
-    }
-    // На мобільних пристроях картки стають на 100% ширини контейнера
-    @media (max-width: 768px) {
-        width: 100%;
-        max-width: 260px; // Максимальна ширина для більш компактного вигляду
-        height: 50px;
-        text-align: center;
-    }
 }
 
 .cleaners-photo-box {
@@ -162,16 +93,6 @@
     & img {
         width: 175px;
     }
-    // Стилі для планшетів (екран від 768px до 1024px)
-    @media (max-width: 1024px) {
-        width: 50px;
-        height: 50px;
-    }
-    // Стилі для мобільних пристроїв (екран менше 768px)
-    @media (max-width: 768px) {
-        width: 30px;
-        height: 30px;
-    }
 }
 
 .name__title {
@@ -181,17 +102,6 @@
     line-height: 200%;
     letter-spacing: 0%;
     text-align: left;
-    // Стилі для планшетів (від 768px до 1024px)
-    @media (max-width: 1024px) {
-        line-height: 180%;
-        font-size: 10px;
-    }
-    // Стилі для мобільних пристроїв (менше 768px)
-    @media (max-width: 768px) {
-        font-size: 8px;
-        text-align: left;
-        display: inline-block; // Для відображення тексту в рядок
-    }
 }
 
 .cleaners__item {
@@ -255,11 +165,150 @@
 
 .offers__star-list {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: -15px;
+    @media (min-width: 1200px) {
+        justify-content: center;
+        align-items: center;
+        margin-left: -15px;
+    }
 }
 
 .title-hover-star {
     margin-right: 5px; // Додаємо відступ між заголовком і зірками
+}
+
+
+/* Медіа-запити */
+
+
+/* Для планшетів (до 1200px) */
+
+@media (max-width: 1200px) {
+    .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .services-box {
+        text-align: right;
+    }
+    .cleaners-box {
+        margin-left: auto;
+    }
+    .services__title {
+        font-size: 20px;
+        line-height: 27px;
+    }
+    .services__description {
+        font-size: 12px;
+    }
+    .cleaners__title {
+        font-size: 20px;
+    }
+    .cleaners__list {
+        width: 317px;
+    }
+    .cleaners__item {
+        width: 248px;
+        height: 80px;
+    }
+    .cleaners-photo-box {
+        width: 50px;
+        height: 50px;
+    }
+    .name__title {
+        font-size: 10px;
+        line-height: 180%;
+    }
+    .cleaners-photo-box-hover {
+        width: 60px;
+        height: 60px;
+    }
+    .name__title-hover {
+        font-size: 14px;
+        margin-left: 70px;
+        top: -50px;
+    }
+    .container_title-hover {
+        margin-top: -20px;
+    }
+    .title-hover {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    .cleaners__subtext {
+        font-size: 12px;
+    }
+}
+
+
+/* Для мобільних пристроїв (до 850px) */
+
+@media (max-width: 814px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .services-box {
+        margin-right: 0;
+        order: 1;
+        text-align: center;
+    }
+    .cleaners-box {
+        margin-left: 0;
+        margin-top: 20px;
+        order: 2;
+        text-align: center;
+    }
+    .services__title {
+        font-size: 10px;
+        line-height: 13px;
+        text-align: center;
+    }
+    .services__description {
+        font-size: 8px;
+    }
+    .cleaners__title {
+        font-size: 15px;
+    }
+    .cleaners__item {
+        width: 100%;
+        max-width: 260px;
+        height: 50px;
+        text-align: center;
+    }
+    .cleaners-photo-box {
+        width: 30px;
+        height: 30px;
+    }
+    .name__title {
+        font-size: 8px;
+        text-align: left;
+        display: inline-block;
+    }
+    .name__title-hover {
+        font-size: 10px;
+        margin-left: 50px;
+        top: -30px;
+    }
+    .container_title-hover {
+        margin-top: -10px;
+    }
+    .title-hover {
+        font-size: 10px;
+        margin-bottom: 15px;
+    }
+    .cleaners__subtext {
+        font-size: 8px;
+    }
+    .additional-text {
+        width: 260px;
+        height: 195px;
+    }
+    .offers-star {
+        width: 10px;
+        height: 10px;
+    }
+    .offers-name-and-surname-box h2.name__title-hover:nth-child(2) {
+        margin-left: -1px;
+        gap: 10px;
+    }
 }

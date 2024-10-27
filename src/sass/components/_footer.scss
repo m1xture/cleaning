@@ -1,45 +1,130 @@
 .footer {
-  padding-top: 60px;
-  padding-bottom: 60px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
+
 .footer-container {
-  display: flex;
-  justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
 }
+
 .footer-block {
-  display: flex;
+    display: flex;
 }
+
 .footer__logo {
-  margin-right: 156px;
-  height: 55.2px;
+    margin-right: 156px;
+    height: 55.2px;
 }
+
 .footer__list {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
+
 .footer__link {
-  @extend %text-main;
-  font-weight: 300;
-  &:hover {
-    text-decoration: underline;
-  }
-}
-.socials {
-  display: flex;
-  &__item {
-    margin-right: 32px;
-    &:last-child {
-      margin-right: 0;
+    @extend %text-main;
+    font-weight: 300;
+    &:hover {
+        text-decoration: underline;
     }
-  }
 }
+
+.socials {
+    display: flex;
+    &__item {
+        margin-right: 32px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
 .socials__icon {
-  transition-duration: 250ms;
-  transition-delay: 50ms;
-  transition-timing-function: ease-in-out;
-  &:hover {
-    filter: invert(77%) sepia(20%) saturate(242%) hue-rotate(351deg)
-      brightness(102%) contrast(100%);
-  }
+    transition-duration: 250ms;
+    transition-delay: 50ms;
+    transition-timing-function: ease-in-out;
+    &:hover {
+        filter: invert(77%) sepia(20%) saturate(242%) hue-rotate(351deg) brightness(102%) contrast(100%);
+    }
+}
+
+@media (max-width: 1200px) {
+    .footer-container {
+        /* Залишаємо горизонтальне вирівнювання */
+        flex-direction: row;
+        /* Залишається горизонтальним */
+        align-items: flex-start;
+        /* Вирівнювання по верхньому краю */
+    }
+    .footer-block {
+        flex-direction: row;
+        /* Горизонтальне вирівнювання */
+        margin-bottom: 20px;
+        /* Відступ між логотипом і списком */
+    }
+    .footer__logo {
+        margin-right: 60px;
+        width: 117px;
+        height: 35px;
+        /* Зменшена висота логотипа */
+    }
+    .footer__list {
+        display: flex;
+        flex-direction: column;
+        /* Список залишається вертикальним */
+        justify-content: flex-start;
+        /* Залишається на початку */
+    }
+    .footer__link {
+        font-size: 12px;
+        /* Зменшений розмір шрифту */
+    }
+    .socials {
+        margin-top: 0;
+        /* Скидаємо відступ для соціальних іконок */
+        justify-content: flex-start;
+        /* Вирівнюємо соціальні іконки на початку */
+    }
+    .socials__item {
+        margin-right: 20px;
+    }
+    .socials__icon {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media (max-width: 814px) {
+    .footer-container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .footer-block {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .footer__logo {
+        margin-bottom: 10px;
+        width: 68px;
+        height: 20px;
+    }
+    .footer__list {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .socials__item {
+        margin-right: 10px;
+        /* Ще менший відступ для соціальних іконок */
+    }
+    .footer__link {
+        font-size: 8px;
+    }
+    .socials__icon {
+        width: 10px;
+        height: 10px;
+    }
 }
