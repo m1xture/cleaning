@@ -107,3 +107,118 @@
     top: -80px;
     cursor: pointer;
 }
+
+
+/* Стілі для планшетів */
+
+@media (max-width: 1200px) {
+    .tips__item {
+        width: 382px;
+        /* Зменшена ширина картки */
+        height: 250px;
+        /* Автоматична висота */
+        padding: 20px;
+        /* Відступ */
+        position: relative;
+    }
+    .tips__description {
+        font-size: 12px;
+        width: 100%;
+        overflow: hidden;
+    }
+    .show-text {
+        width: 90%;
+        /* Зменшена ширина в розгорнутому стані */
+        width: 382px;
+        /* Зменшена ширина картки */
+        height: 250px;
+        overflow: hidden;
+        /* Обмеження тексту в межах картки */
+        padding: 20px;
+    }
+    .show-text-img {
+        width: 15px;
+        /* Ширина хрестика */
+        height: 15px;
+        /* Висота хрестика */
+        position: absolute;
+        top: 10px;
+        /* Відступ від верхнього краю */
+        right: 10px;
+        /* Відступ від правого краю */
+        cursor: pointer;
+    }
+    .tips-photo-box {
+        width: 75px;
+        /* Зменшена ширина фото */
+        height: 75px;
+        /* Зменшена висота фото */
+    }
+    .tips__name {
+        font-size: 14px;
+        /* Менший розмір тексту */
+    }
+}
+
+
+/* Стілі для мобільних пристроїв */
+
+@media (max-width: 814px) {
+    .tips__title {
+        font-size: 17px;
+    }
+    .tips__list {
+        display: flex;
+        flex-direction: column;
+        /* Картки в один стовпець */
+    }
+    .tips__item {
+        width: 260px;
+        /* Ширина картки на всю ширину екрану */
+        height: 140px;
+        /* Автоматична висота */
+        padding: 15px;
+        /* Відступ */
+        position: relative;
+    }
+    .tips__description {
+        /* Зменшений розмір шрифту */
+        width: 100%;
+        font-size: 8px;
+        overflow: hidden;
+        /* Текст не виходить за межі картки */
+    }
+    .show-text {
+        width: 260px;
+        /* Зменшена ширина в розгорнутому стані */
+        height: auto;
+        overflow: hidden;
+        /* Обмеження тексту в межах картки */
+        padding: 20px;
+    }
+    .show-text-img {
+        width: 10px;
+        /* Ширина хрестика */
+        height: 10px;
+        /* Висота хрестика */
+        position: absolute;
+        top: 10px;
+        /* Відступ від верхнього краю */
+        right: 10px;
+        /* Відступ від правого краю */
+        cursor: pointer;
+    }
+    .tips-photo-box {
+        width: 30px;
+        height: 30px;
+    }
+    .name-and-surname-box {
+        display: flex;
+    }
+    .tips__name {
+        font-size: 10px;
+    }
+    .tips__name:not(:last-child) {
+        margin-right: 5px;
+    }
+}
