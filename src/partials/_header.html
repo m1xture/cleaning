@@ -14,9 +14,23 @@
       </li>
     </ul>
     <div class="header-block">
-      <button class="header__burger-btn" type="button">
+      <button class="header__burger-btn" type="button" data-burger-open="true">
         <img src="./img/svg/Burger.svg" alt="burger" />
       </button>
+    </div>
+    <div class="burger burger--hidden">
+      <ul class="burger__list">
+        <li class="burger__item">
+          <button class="header__btn header__btn--first" type="button">
+            Log In
+          </button>
+        </li>
+        <li class="burger__item">
+          <button class="header__btn header__btn--second" type="button">
+            Sign Up
+          </button>
+        </li>
+      </ul>
     </div>
   </div>
 </header>
