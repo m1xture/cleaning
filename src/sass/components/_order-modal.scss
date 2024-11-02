@@ -2,7 +2,7 @@
 
 // }
 
-// @media screen and (min-width: 1200px) {
+// @media screen and (min-width: 1356px) {
 
 // }
 
@@ -45,7 +45,7 @@
     padding: 25px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1356px) {
     width: 470px;
     height: 95vh;
     padding: 30px 25px;
@@ -74,7 +74,7 @@
     height: 15px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1356px) {
     width: 20px;
     height: 20px;
   }
@@ -93,7 +93,7 @@
     margin-top: 35px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1356px) {
     margin-top: 30px;
   }
 }
@@ -104,6 +104,18 @@
 
 .order-modal__input {
   @extend %modal-input;
+}
+
+.order-modal__input--sm {
+  width: 110px;
+
+  @media screen and (min-width: 814px) {
+    width: 165px;
+  }
+
+  @media screen and (min-width: 1356px) {
+    width: 204px;
+  }
 }
 
 .order-modal__select {
@@ -129,7 +141,7 @@
     margin-top: 20px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1356px) {
     margin-top: 25px;
   }
 }
@@ -154,7 +166,7 @@
     margin-top: 10px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1356px) {
     padding-bottom: 60px;
     width: 420px;
     height: 91px;
@@ -172,7 +184,7 @@
       line-height: 13px;
     }
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1356px) {
       font-size: 14px;
       line-height: 18px;
     }
@@ -186,7 +198,7 @@
     margin-top: 20px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1356px) {
     margin-top: 25px;
   }
 }
@@ -212,7 +224,7 @@
     width: 145px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1356px) {
     margin-top: 25px;
     width: 145px;
   }

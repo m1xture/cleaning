@@ -1,304 +1,304 @@
 .offers {
-    padding-top: 30px;
-    background-color: $bgAccentColor;
-    // min-height: 100vh;
+  padding-top: 30px;
+  background-color: $bgAccentColor;
+  // min-height: 100vh;
+  @media screen and (min-width: 814px) {
+    padding-top: 50px;
+  }
+  @media screen and (min-width: 1356px) {
+    padding-top: 60px;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
     @media screen and (min-width: 814px) {
-        padding-top: 50px;
+      flex-direction: row;
+      justify-content: space-between;
+      // align-items: flex-start;
     }
-    @media screen and (min-width: 1200px) {
-        padding-top: 60px;
+    @media screen and (min-width: 1356px) {
+      justify-content: space-between;
+      margin-top: 30px;
     }
-    .container {
-        display: flex;
-        flex-direction: column;
-        // align-items: center;
-        @media screen and (min-width: 814px) {
-            flex-direction: row;
-            justify-content: space-between;
-            // align-items: flex-start;
-        }
-        @media screen and (min-width: 1200px) {
-            justify-content: space-between;
-            margin-top: 30px;
-        }
-    }
-    .offers__title {
-        font-family: 'Playfair Display';
-        font-size: 12px;
-        font-weight: 400;
-        line-height: 13px;
-        letter-spacing: 0%;
-        color: $textColor;
-        text-align: center;
-        @media screen and (min-width: 814px) {
-            font-size: 24px;
-            line-height: 43px;
-        }
-        @media screen and (min-width: 1200px) {
-            font-size: 32px;
-        }
-    }
-    .services-box,
-    .cleaners-box {
-        text-align: center;
-        margin: 20px 0;
-        @media screen and (min-width: 814px) {
-            text-align: left;
-        }
-    }
-}
-
-.services__title {
-    font-family: 'Playfair Display';
-    font-size: 10px;
-    font-weight: 400;
-    line-height: 13px;
-    text-align: center;
-    color: $textColor;
-    @media screen and (min-width: 814px) {
-        font-size: 24px;
-        line-height: 43px;
-    }
-    @media screen and (min-width: 1200px) {
-        font-size: 32px;
-    }
-}
-
-.cleaners__title {
+  }
+  .offers__title {
     font-family: 'Playfair Display';
     font-size: 12px;
     font-weight: 400;
-    line-height: 43px;
-    text-align: center;
+    line-height: 13px;
+    letter-spacing: 0%;
     color: $textColor;
+    text-align: center;
     @media screen and (min-width: 814px) {
-        font-size: 24px;
-        line-height: 43px;
+      font-size: 24px;
+      line-height: 43px;
     }
-    @media screen and (min-width: 1200px) {
-        font-size: 32px;
+    @media screen and (min-width: 1356px) {
+      font-size: 32px;
     }
+  }
+  .services-box,
+  .cleaners-box {
+    text-align: center;
+    margin: 20px 0;
+    @media screen and (min-width: 814px) {
+      text-align: left;
+    }
+  }
+}
+
+.services__title {
+  font-family: 'Playfair Display';
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 13px;
+  text-align: center;
+  color: $textColor;
+  @media screen and (min-width: 814px) {
+    font-size: 24px;
+    line-height: 43px;
+  }
+  @media screen and (min-width: 1356px) {
+    font-size: 32px;
+  }
+}
+
+.cleaners__title {
+  font-family: 'Playfair Display';
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 43px;
+  text-align: center;
+  color: $textColor;
+  @media screen and (min-width: 814px) {
+    font-size: 24px;
+    line-height: 43px;
+  }
+  @media screen and (min-width: 1356px) {
+    font-size: 32px;
+  }
 }
 
 .cleaners__list {
-    display: grid;
-    gap: 30px;
-    max-width: 100%;
+  display: grid;
+  gap: 30px;
+  max-width: 100%;
+  grid-template-columns: 1fr;
+  margin-top: 10px;
+  @media screen and (min-width: 814px) {
     grid-template-columns: 1fr;
-    margin-top: 10px;
-    @media screen and (min-width: 814px) {
-        grid-template-columns: 1fr;
-        max-width: 100%;
-        margin-left: 0;
-        margin-top: 40px;
-    }
-    @media screen and (min-width: 1200px) {
-        grid-template-columns: repeat(2, 1fr);
-        max-width: 700px;
-        margin-left: 40px;
-        margin-top: 30px;
-    }
+    max-width: 100%;
+    margin-left: 0;
+    margin-top: 40px;
+  }
+  @media screen and (min-width: 1356px) {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 700px;
+    margin-left: 40px;
+    margin-top: 30px;
+  }
 }
 
 .cleaners__item {
-    width: 260px;
-    height: 50px;
-    text-align: center;
-    display: flex;
-    gap: 20px;
-    padding: 12px 17px;
-    background-color: rgb(255, 255, 255);
-    border-radius: 10px;
-    box-shadow: $boxShadow;
-    @media screen and (min-width: 814px) {
-        width: 248px;
-        height: 80px;
-    }
-    @media screen and (min-width: 1200px) {
-        width: 317px;
-        height: 100px;
-    }
+  width: 260px;
+  height: 50px;
+  text-align: center;
+  display: flex;
+  gap: 20px;
+  padding: 12px 17px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  box-shadow: $boxShadow;
+  @media screen and (min-width: 814px) {
+    width: 248px;
+    height: 80px;
+  }
+  @media screen and (min-width: 1356px) {
+    width: 317px;
+    height: 100px;
+  }
 }
 
 .cleaners-photo-box {
-    width: 30px;
-    height: 30px;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(217, 217, 217);
-    border-radius: 50%;
-    & img {
-        width: 175px;
-    }
-    @media screen and (min-width: 814px) {
-        width: 50px;
-        height: 50px;
-    }
-    @media screen and (min-width: 1200px) {
-        width: 75px;
-        height: 75px;
-    }
+  width: 30px;
+  height: 30px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(217, 217, 217);
+  border-radius: 50%;
+  & img {
+    width: 175px;
+  }
+  @media screen and (min-width: 814px) {
+    width: 50px;
+    height: 50px;
+  }
+  @media screen and (min-width: 1356px) {
+    width: 75px;
+    height: 75px;
+  }
 }
 
 .name__title {
-    font-family: 'Quicksand';
-    font-weight: 400;
-    font-size: 8px;
-    line-height: 1.8;
-    text-align: left;
-    margin-left: 5px;
+  font-family: 'Quicksand';
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 1.8;
+  text-align: left;
+  margin-left: 5px;
+  margin-top: 5px;
+  @media screen and (min-width: 814px) {
+    font-size: 10px;
     margin-top: 5px;
-    @media screen and (min-width: 814px) {
-        font-size: 10px;
-        margin-top: 5px;
-    }
-    @media screen and (min-width: 1200px) {
-        font-size: 16px;
-    }
+  }
+  @media screen and (min-width: 1356px) {
+    font-size: 16px;
+  }
 }
 
 .cleaners__item {
-    position: relative;
+  position: relative;
 }
 
 .additional-text {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 260px;
-    height: 155px;
-    pointer-events: none;
-    border: 1px solid rgb(0, 0, 0);
-    border-radius: 10px;
-    backdrop-filter: blur(10px);
-    background: rgba(255, 255, 255, 0.1);
-    padding: 20px;
-    opacity: 0;
-    transition: opacity 0.5s ease;
-    z-index: 1;
-    @media screen and (min-width: 814px) {
-        width: 280px;
-        height: 270px;
-    }
-    @media screen and (min-width: 1200px) {
-        width: 390px;
-        height: 350px;
-    }
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 260px;
+  height: 155px;
+  pointer-events: none;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  z-index: 1;
+  @media screen and (min-width: 814px) {
+    width: 280px;
+    height: 270px;
+  }
+  @media screen and (min-width: 1356px) {
+    width: 390px;
+    height: 350px;
+  }
 }
 
 .cleaners__item:hover .additional-text {
-    opacity: 1;
+  opacity: 1;
 }
 
 .name__title-hover {
-    position: relative;
-    font-size: 10px;
-    margin-left: 50px;
-    top: -30px;
-    margin-right: -40px;
-    @media screen and (min-width: 814px) {
-        font-size: 14px;
-        margin-left: 100px;
-        top: -70px;
-    }
-    @media screen and (min-width: 1200px) {
-        font-size: 14px;
-        margin-left: 170px;
-        top: -100px;
-    }
+  position: relative;
+  font-size: 10px;
+  margin-left: 50px;
+  top: -30px;
+  margin-right: -40px;
+  @media screen and (min-width: 814px) {
+    font-size: 14px;
+    margin-left: 100px;
+    top: -70px;
+  }
+  @media screen and (min-width: 1356px) {
+    font-size: 14px;
+    margin-left: 170px;
+    top: -100px;
+  }
 }
 
 .cleaners-photo-box-hover {
-    width: 30px;
-    height: 30px;
-    @media screen and (min-width: 814px) {
-        width: 75px;
-        height: 75px;
-    }
-    @media screen and (min-width: 1200px) {
-        width: 125px;
-        height: 125px;
-    }
+  width: 30px;
+  height: 30px;
+  @media screen and (min-width: 814px) {
+    width: 75px;
+    height: 75px;
+  }
+  @media screen and (min-width: 1356px) {
+    width: 125px;
+    height: 125px;
+  }
 }
 
 .container_title-hover {
-    margin-top: -10px;
-    display: flex;
-    flex-direction: column;
-    @media screen and (min-width: 814px) {
-        margin-top: -50px;
-    }
+  margin-top: -10px;
+  display: flex;
+  flex-direction: column;
+  @media screen and (min-width: 814px) {
+    margin-top: -50px;
+  }
 }
 
 .title-hover {
-    font-size: 8px;
-    font-weight: 400;
-    margin-bottom: 15px;
-    letter-spacing: 0%;
-    text-align: left;
-    display: inline;
-    @media screen and (min-width: 814px) {
-        font-size: 12px;
-    }
-    @media screen and (min-width: 1200px) {
-        font-size: 18px;
-    }
-    &:nth-child(3n) {
-        margin-bottom: 0;
-    }
+  font-size: 8px;
+  font-weight: 400;
+  margin-bottom: 15px;
+  letter-spacing: 0%;
+  text-align: left;
+  display: inline;
+  @media screen and (min-width: 814px) {
+    font-size: 12px;
+  }
+  @media screen and (min-width: 1356px) {
+    font-size: 18px;
+  }
+  &:nth-child(3n) {
+    margin-bottom: 0;
+  }
 }
 
 .cleaners__subtext {
-    font-size: 6px;
-    line-height: 1.1;
-    display: inline;
-    @media screen and (min-width: 814px) {
-        font-size: 10px;
-    }
-    @media screen and (min-width: 1200px) {
-        font-size: 14px;
-    }
+  font-size: 6px;
+  line-height: 1.1;
+  display: inline;
+  @media screen and (min-width: 814px) {
+    font-size: 10px;
+  }
+  @media screen and (min-width: 1356px) {
+    font-size: 14px;
+  }
 }
 
 .offers__star-list {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .title-hover-star {
-    margin-right: 5px;
+  margin-right: 5px;
 }
 
 .offers-star {
-    width: 15px;
-    height: 15px;
-    @media screen and (min-width: 814px) {
-        width: 20px;
-        height: 20px;
-    }
-    @media screen and (min-width: 1200px) {
-        width: 30px;
-        height: 30px;
-    }
+  width: 15px;
+  height: 15px;
+  @media screen and (min-width: 814px) {
+    width: 20px;
+    height: 20px;
+  }
+  @media screen and (min-width: 1356px) {
+    width: 30px;
+    height: 30px;
+  }
 }
 
 .offers-name-and-surname-box {
-    display: flex;
-    @media screen and (min-width: 814px) {
-        display: block;
-    }
+  display: flex;
+  @media screen and (min-width: 814px) {
+    display: block;
+  }
 }
 
 .offers-name-and-surname-box:not(:last-child) {
-    margin-right: 5px;
+  margin-right: 5px;
 }
 
 .services__list-2 {
-    flex-direction: column;
-    margin-top: 30px;
-    margin-left: 50px;
-    list-style-type: disc;
-    display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  margin-left: 50px;
+  list-style-type: disc;
+  display: flex;
 }
