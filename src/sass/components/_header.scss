@@ -13,6 +13,7 @@
   align-items: center;
   justify-content: space-between;
   flex-direction: row;
+  position: relative;
 }
 .header__logo {
   width: 68px;
@@ -86,8 +87,8 @@
   width: 120px;
   opacity: 1;
   position: absolute;
-  top: 45px;
-  right: 50px;
+  top: 40px;
+  right: 1vw;
   border-radius: 10px;
   border: 1px solid $textColor;
   background: rgba(255, 255, 255, 0.1);
