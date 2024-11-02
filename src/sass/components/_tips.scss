@@ -1,179 +1,196 @@
 @keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @keyframes fadeOut {
-    from {
-        opacity: 1;
-        transform: translateY(0);
-    }
-    to {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
 }
 
 .tips {
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  @media screen and (min-width: 814px) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  @media screen and (min-width: 1356px) {
     padding-top: 60px;
     padding-bottom: 60px;
+  }
 }
 
 .tips__title {
-    @extend %title;
-    font-size: 12px;
-    @media screen and (min-width: 814px) {
-        font-size: 24px;
-    }
-    @media screen and (min-width: 1200px) {
-        font-size: 40px;
-    }
+  @extend %title;
+  font-size: 12px;
+  line-height: 16px;
+
+  @media screen and (min-width: 814px) {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  @media screen and (min-width: 1356px) {
+    font-size: 40px;
+    line-height: 53px;
+  }
 }
 
 .tips__list {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+  gap: 20px;
+
+  @media screen and (min-width: 814px) {
+    flex-direction: row;
     margin-top: 30px;
-    gap: 20px;
-    @media screen and (min-width: 814px) {
-        flex-direction: row;
-    }
+  }
 }
 
 .tips__item {
-    width: 260px;
-    height: 140px;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: $boxShadow;
-    background: rgb(255, 255, 255);
-    position: relative;
-    @media screen and (min-width: 814px) {
-        width: 382px;
-        height: 250px;
-        padding: 20px;
-    }
-    @media screen and (min-width: 1200px) {
-        width: 654px;
-        height: 289px;
-        padding: 25px;
-    }
+  width: 260px;
+  height: 140px;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: $boxShadow;
+  background: rgb(255, 255, 255);
+  position: relative;
+  @media screen and (min-width: 814px) {
+    width: 382px;
+    height: 250px;
+    padding: 20px;
+  }
+  @media screen and (min-width: 1356px) {
+    width: 654px;
+    height: 289px;
+    padding: 25px;
+  }
 }
 
 .tips-photo-box {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background: rgb(217, 217, 217);
-    @media screen and (min-width: 814px) {
-        width: 75px;
-        height: 75px;
-    }
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: rgb(217, 217, 217);
+  @media screen and (min-width: 814px) {
+    width: 75px;
+    height: 75px;
+  }
 }
 
 .tips__name {
-    font-size: 10px;
-    font-weight: 400;
-    line-height: 250%;
-    letter-spacing: 0%;
-    text-align: left;
-    color: $textColor;
-    color: $textColor;
-    @media screen and (min-width: 814px) {
-        font-size: 14px;
-    }
-    @media screen and (min-width: 1200px) {
-        font-size: 16px;
-    }
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 250%;
+  letter-spacing: 0%;
+  text-align: left;
+  color: $textColor;
+  color: $textColor;
+  @media screen and (min-width: 814px) {
+    font-size: 14px;
+  }
+  @media screen and (min-width: 1356px) {
+    font-size: 16px;
+  }
 }
 
 .tips__name:not(:last-child) {
-    margin-right: 5px;
+  margin-right: 5px;
 }
 
 .tips__description {
+  width: 100%;
+  font-size: 8px;
+  text-align: left;
+  margin-left: auto;
+  overflow: hidden;
+  @media screen and (min-width: 814px) {
+    font-size: 12px;
     width: 100%;
-    font-size: 8px;
-    text-align: left;
-    margin-left: auto;
-    overflow: hidden;
-    @media screen and (min-width: 814px) {
-        font-size: 12px;
-        width: 100%;
-    }
-    @media screen and (min-width: 1200px) {
-        font-size: 16px;
-        width: 554px;
-    }
+  }
+  @media screen and (min-width: 1356px) {
+    font-size: 16px;
+    width: 554px;
+  }
 }
 
 .show-text-img {
-    width: 10px;
-    height: 10px;
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    cursor: pointer;
-    @media screen and (min-width: 814px) {
-        width: 15px;
-        height: 15px;
-    }
-    @media screen and (min-width: 1200px) {
-        width: 20px;
-        height: 20px;
-    }
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  @media screen and (min-width: 814px) {
+    width: 15px;
+    height: 15px;
+  }
+  @media screen and (min-width: 1356px) {
+    width: 20px;
+    height: 20px;
+  }
 }
 
 .tips-see-more__span {
-    color: rgb(106, 106, 106);
-    text-decoration: underline;
+  color: rgb(106, 106, 106);
+  text-decoration: underline;
 }
 
 .tips-person-box {
-    display: flex;
-    gap: 25px;
-    margin-bottom: 15px;
+  display: flex;
+  gap: 25px;
+  margin-bottom: 15px;
 }
 
 .show-text {
-    position: absolute;
-    opacity: 0;
-    pointer-events: none;
-    width: 260px;
-    height: 144px;
-    border: 1px solid rgb(0, 0, 0);
-    border-radius: 10px;
-    backdrop-filter: blur(10px);
-    background: rgba(255, 255, 255, 0.1);
-    padding: 20px;
-    z-index: 1;
-    top: 0;
-    animation: fadeOut 0.5s ease-in-out forwards;
-    @media screen and (min-width: 814px) {
-        width: 382px;
-        height: 250px;
-    }
-    @media screen and (min-width: 1200px) {
-        width: 654px;
-        height: 330px;
-    }
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+  width: 260px;
+  height: 144px;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  z-index: 1;
+  top: 0;
+  animation: fadeOut 0.5s ease-in-out forwards;
+  @media screen and (min-width: 814px) {
+    width: 382px;
+    height: 250px;
+  }
+  @media screen and (min-width: 1356px) {
+    width: 654px;
+    height: 330px;
+  }
 }
 
 .tips--shown {
-    opacity: 1;
-    pointer-events: auto;
-    animation: fadeIn 0.5s ease-in-out forwards;
+  opacity: 1;
+  pointer-events: auto;
+  animation: fadeIn 0.5s ease-in-out forwards;
 }
 
 .name-and-surname-box {
-    display: flex;
-    @media screen and (min-width: 814px) {
-        display: block;
-    }
+  display: flex;
+  @media screen and (min-width: 814px) {
+    display: block;
+  }
 }
