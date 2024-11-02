@@ -1,26 +1,67 @@
 .footer {
     padding-top: 60px;
     padding-bottom: 60px;
+    @media (max-width: 1200px) {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    @media (max-width: 814px) {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
 }
 
 .footer-container {
     display: flex;
     justify-content: space-between;
+    @media (max-width: 1200px) {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    @media (max-width: 814px) {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
 }
 
 .footer-block {
     display: flex;
+    @media (max-width: 1200px) {
+        flex-direction: row;
+        margin-bottom: 20px;
+    }
+    @media (max-width: 814px) {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }
 
 .footer__logo {
     margin-right: 156px;
     height: 55.2px;
+    @media (max-width: 1200px) {
+        margin-right: 60px;
+        width: 117px;
+        height: 35px;
+    }
+    @media (max-width: 814px) {
+        margin-bottom: 10px;
+        width: 68px;
+        height: 20px;
+    }
 }
 
 .footer__list {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    @media (max-width: 1200px) {
+        justify-content: flex-start;
+    }
+    @media (max-width: 814px) {
+        align-items: flex-start;
+    }
 }
 
 .footer__link {
@@ -28,6 +69,12 @@
     font-weight: 300;
     &:hover {
         text-decoration: underline;
+    }
+    @media (max-width: 1200px) {
+        font-size: 12px;
+    }
+    @media (max-width: 814px) {
+        font-size: 8px;
     }
 }
 
@@ -37,6 +84,12 @@
         margin-right: 32px;
         &:last-child {
             margin-right: 0;
+        }
+        @media (max-width: 1200px) {
+            margin-right: 20px;
+        }
+        @media (max-width: 814px) {
+            margin-right: 10px;
         }
     }
 }
@@ -48,82 +101,11 @@
     &:hover {
         filter: invert(77%) sepia(20%) saturate(242%) hue-rotate(351deg) brightness(102%) contrast(100%);
     }
-}
-
-@media (max-width: 1200px) {
-    .footer-container {
-        /* Залишаємо горизонтальне вирівнювання */
-        flex-direction: row;
-        /* Залишається горизонтальним */
-        align-items: flex-start;
-        /* Вирівнювання по верхньому краю */
-    }
-    .footer-block {
-        flex-direction: row;
-        /* Горизонтальне вирівнювання */
-        margin-bottom: 20px;
-        /* Відступ між логотипом і списком */
-    }
-    .footer__logo {
-        margin-right: 60px;
-        width: 117px;
-        height: 35px;
-        /* Зменшена висота логотипа */
-    }
-    .footer__list {
-        display: flex;
-        flex-direction: column;
-        /* Список залишається вертикальним */
-        justify-content: flex-start;
-        /* Залишається на початку */
-    }
-    .footer__link {
-        font-size: 12px;
-        /* Зменшений розмір шрифту */
-    }
-    .socials {
-        margin-top: 0;
-        /* Скидаємо відступ для соціальних іконок */
-        justify-content: flex-start;
-        /* Вирівнюємо соціальні іконки на початку */
-    }
-    .socials__item {
-        margin-right: 20px;
-    }
-    .socials__icon {
+    @media (max-width: 1200px) {
         width: 20px;
         height: 20px;
     }
-}
-
-@media (max-width: 814px) {
-    .footer-container {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: flex-start;
-    }
-    .footer-block {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .footer__logo {
-        margin-bottom: 10px;
-        width: 68px;
-        height: 20px;
-    }
-    .footer__list {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .socials__item {
-        margin-right: 10px;
-        /* Ще менший відступ для соціальних іконок */
-    }
-    .footer__link {
-        font-size: 8px;
-    }
-    .socials__icon {
+    @media (max-width: 814px) {
         width: 10px;
         height: 10px;
     }
