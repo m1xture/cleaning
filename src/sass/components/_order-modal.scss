@@ -1,3 +1,11 @@
+// @media screen and (min-width: 814px) {
+
+// }
+
+// @media screen and (min-width: 1200px) {
+
+// }
+
 .backdrop-order {
   position: fixed;
   top: 0;
@@ -27,22 +35,49 @@
   overflow: scroll;
   -ms-overflow-style: none;
   scrollbar-width: none;
-  width: 470px;
-  height: 95vh;
-  padding: 30px 25px;
+  width: 260px;
+  height: 85vh;
+  padding: 10px;
+
+  @media screen and (min-width: 814px) {
+    width: 400px;
+    height: 90vh;
+    padding: 25px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 470px;
+    height: 95vh;
+    padding: 30px 25px;
+  }
   //   backdrop-filter: blur(10px);
   //   background-color: rgba(255, 255, 255, 0.5);
 }
 
 .order-modal-close__btn {
   position: absolute;
-  top: 25px;
-  right: 25px;
+  top: 10px;
+  right: 10px;
+
+  @media screen and (min-width: 814px) {
+    top: 25px;
+    right: 25px;
+  }
 }
 
 .order-modal-close__btn img {
-  width: 20px;
-  height: 20px;
+  width: 10px;
+  height: 10px;
+
+  @media screen and (min-width: 814px) {
+    width: 15px;
+    height: 15px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 20px;
+    height: 20px;
+  }
 }
 
 .order-modal__title {
@@ -50,9 +85,17 @@
 }
 
 .order-modal__form {
-  margin-top: 30px;
   display: flex;
   flex-direction: column;
+  margin-top: 20px;
+
+  @media screen and (min-width: 814px) {
+    margin-top: 35px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 30px;
+  }
 }
 
 .order-modal__form label {
@@ -64,55 +107,115 @@
 }
 
 .order-modal__select {
-  padding-top: 13px;
-  padding-bottom: 13px;
-  padding-left: 25px;
-  padding-right: 25px;
   border-radius: 10px;
   background-color: rgb(240, 240, 240);
   border: none;
-  margin-top: 10px;
+  margin-top: 5px;
+  padding: 10px 15px;
+
+  @media screen and (min-width: 814px) {
+    padding: 13px 25px;
+    margin-top: 10px;
+  }
 }
 
 .order-modal-phone-box {
   display: flex;
-  margin-top: 25px;
+  margin-top: 15px;
+  align-items: center;
+  justify-content: center;
+
+  @media screen and (min-width: 814px) {
+    margin-top: 20px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 25px;
+  }
 }
 
 .order-modal__textarea {
   border-radius: 10px;
   background: rgb(240, 240, 240);
-  padding-top: 13px;
-  padding-bottom: 60px;
-  padding-left: 25px;
-  margin-top: 10px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-left: 15px;
+  margin-top: 5px;
   border: none;
+  width: 240px;
+  height: 40px;
+
+  @media screen and (min-width: 814px) {
+    width: 350px;
+    height: 52px;
+    padding-top: 13px;
+    padding-bottom: 26px;
+    padding-left: 25px;
+    margin-top: 10px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 60px;
+    width: 420px;
+    height: 91px;
+  }
+
   &::placeholder {
     color: rgb(183, 183, 183);
-    font-size: 14px;
+    font-size: 8px;
     font-weight: 400;
-    line-height: 18px;
+    line-height: 10px;
     text-align: left;
+
+    @media screen and (min-width: 814px) {
+      font-size: 10px;
+      line-height: 13px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+      line-height: 18px;
+    }
   }
 }
 
 .order-modal-margin__label {
-  margin-top: 25px;
+  margin-top: 15px;
+
+  @media screen and (min-width: 814px) {
+    margin-top: 20px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 25px;
+  }
 }
 
 .order-modal-send__btn {
   display: block;
-  padding: 10px 25px;
+  padding: 8px 15px;
   border-radius: 10px;
   background-color: $accentColor;
-  width: 145px;
+  // width: 145px;
   color: $textSecondaryColor;
-  font-size: 14px;
+  font-size: 8px;
   font-weight: 400;
-  line-height: 18px;
+  line-height: 10px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 25px;
+  margin-top: 20px;
+
+  @media screen and (min-width: 814px) {
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 18px;
+    width: 145px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 25px;
+    width: 145px;
+  }
 }
 .order__input--error {
   outline: 2px solid rgb(245, 109, 109);

@@ -32,6 +32,7 @@
   line-height: normal;
   color: $textColor;
   text-align: center;
+
   @media screen and (min-width: 814px) {
     font-size: 14px;
   }
@@ -46,10 +47,12 @@
   font-size: 8px;
   text-align: left;
   color: $textColor;
+
   @media screen and (min-width: 814px) {
     font-size: 10px;
     line-height: normal;
   }
+
   @media screen and (min-width: 1200px) {
     font-size: 14px;
     line-height: 18px;
