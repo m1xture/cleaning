@@ -1,7 +1,7 @@
 .offers {
     padding-top: 30px;
     background-color: $bgAccentColor;
-    min-height: 100vh;
+    // min-height: 100vh;
     @media screen and (min-width: 814px) {
         padding-top: 50px;
     }
@@ -166,7 +166,7 @@
 .additional-text {
     position: absolute;
     top: 0;
-    left: 0;
+    right: 0;
     width: 260px;
     height: 155px;
     pointer-events: none;
