@@ -27,32 +27,63 @@
 }
 %modal-title {
   font-family: 'Playfair Display';
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 27px;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: normal;
   color: $textColor;
   text-align: center;
+  @media screen and (min-width: 814px) {
+    font-size: 14px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 27px;
+  }
 }
 %modal-label {
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 18px;
+  font-weight: 400;
+  font-size: 8px;
   text-align: left;
   color: $textColor;
+  @media screen and (min-width: 814px) {
+    font-size: 10px;
+    line-height: normal;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 18px;
+  }
 }
 %modal-input {
-  padding-top: 13px;
-  padding-bottom: 13px;
-  padding-left: 25px;
   border-radius: 10px;
   background-color: rgb(240, 240, 240);
   border: none;
-  margin-top: 10px;
+  padding: 10px 15px;
+  margin-top: 5px;
+  font-size: 8px;
+  line-height: normal;
   &::placeholder {
     color: rgb(183, 183, 183);
-    font-size: 14px;
+    font-size: 8px;
     font-weight: 400;
-    line-height: 18px;
+    line-height: normal;
     text-align: left;
+  }
+  @media screen and (min-width: 814px) {
+    padding: 13px 25px;
+    margin-top: 10px;
+    font-size: 10px;
+    // line-height: normal;
+    &::placeholder {
+      font-size: 10px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    &::placeholder {
+      font-size: 14px;
+      line-height: 18px;
+    }
   }
 }
