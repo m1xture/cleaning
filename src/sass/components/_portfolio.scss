@@ -7,10 +7,10 @@
     letter-spacing: 0%;
     justify-content: center;
     text-align: center;
-    @media (min-width: 814px) {
+    @media screen and (min-width: 814px) {
         font-size: 20px;
     }
-    @media (min-width: 1200px) {
+    @media screen and (min-width: 1200px) {
         font-size: 32px;
     }
 }
@@ -26,11 +26,11 @@
     height: 144px;
     margin: 0 auto;
     display: block;
-    @media (min-width: 814px) {
+    @media screen and (min-width: 814px) {
         width: 516px;
         height: 290px;
     }
-    @media (min-width: 1200px) {
+    @media screen and (min-width: 1200px) {
         width: 885px;
         height: 498px;
     }
@@ -66,11 +66,11 @@
     line-height: 250%;
     text-align: center;
     color: $textColor;
-    @media (min-width: 814px) {
+    @media screen and (min-width: 814px) {
         font-size: 12px;
         text-align: left;
     }
-    @media (min-width: 1200px) {
+    @media screen and (min-width: 1200px) {
         font-size: 16px;
     }
 }
@@ -84,12 +84,12 @@
     letter-spacing: 0%;
     text-align: left;
     width: 400px;
-    @media (min-width: 814px) {
+    @media screen and (min-width: 814px) {
         font-size: 12px;
         width: 420px;
         margin-right: 50px;
     }
-    @media (min-width: 1200px) {
+    @media screen and (min-width: 1200px) {
         font-size: 16px;
     }
 }
@@ -100,19 +100,27 @@
 }
 
 .portfolio {
-    padding-top: 108px;
-    padding-bottom: 100px;
+    padding-top: 25px;
+    padding-bottom: 30px;
     background: $bgAccentColor;
     display: flex;
     flex-direction: column;
     align-items: center;
+    @media screen and (min-width: 814px) {
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+    @media screen and (min-width: 1200px) {
+        padding-top: 30px;
+        padding-bottom: 60px;
+    }
 }
 
 .portfolio-services-box {
     display: flex;
     flex-direction: column;
     align-items: center;
-    @media (min-width: 1200px) {
+    @media screen and (min-width: 1200px) {
         flex-direction: row;
         gap: 300px;
     }
@@ -127,7 +135,7 @@
     flex-direction: column;
     align-items: center;
     margin-top: 30px;
-    @media (min-width: 1200px) {
+    @media screen and (min-width: 1200px) {
         align-items: flex-start;
     }
 }
@@ -137,7 +145,6 @@
     flex-direction: column;
     list-style-type: disc;
     margin-top: 30px;
-    margin-left: 50px;
 }
 
 .portfolio__button {
@@ -155,12 +162,12 @@
     letter-spacing: 0%;
     margin-top: 10px;
     margin-right: 90px;
-    @media (min-width: 814px) {
+    @media screen and (min-width: 814px) {
         width: 191px;
         height: 48px;
         font-size: 14px;
     }
-    @media (min-width: 1200px) {
+    @media screen and (min-width: 1200px) {
         width: 258px;
         height: 55px;
         font-size: 20px;
@@ -172,7 +179,10 @@
     width: 100%;
     height: auto;
     z-index: 0;
-    margin-top: 60px;
+    margin-top: 10px;
+    @media screen and (min-width: 814px) {
+        margin-top: 30px;
+    }
 }
 
 .swiper-slide {
@@ -209,7 +219,7 @@
 .swiper-button-prev {
     color: rgb(25, 25, 25);
     display: none;
-    @media (min-width: 814px) {
+    @media screen and (min-width: 814px) {
         display: block;
     }
 }
@@ -217,7 +227,7 @@
 .swiper-button-next {
     color: rgb(25, 25, 25);
     display: none;
-    @media (min-width: 814px) {
+    @media screen and (min-width: 814px) {
         display: block;
     }
 }
@@ -250,10 +260,10 @@
     line-height: 250%;
     text-align: left;
     color: $textColor;
-    @media (min-width: 814px) {
+    @media screen and (min-width: 814px) {
         font-size: 12px;
     }
-    @media (min-width: 1200px) {
+    @media screen and (min-width: 1200px) {
         font-size: 14px;
     }
 }
@@ -274,10 +284,10 @@
         line-height: 250%;
         // text-align: left;
         color: $textColor;
-        @media (min-width: 814px) {
+        @media screen and (min-width: 814px) {
             font-size: 12px;
         }
-        @media (min-width: 1200px) {
+        @media screen and (min-width: 1200px) {
             font-size: 14px;
         }
     }
@@ -297,6 +307,31 @@
     width: 100%;
 }
 
+.swiper-pagination-bullet {
+    width: 10px;
+    height: 2px;
+    &-active {
+        width: 20px;
+        height: 2px;
+    }
+    @media screen and (min-width: 814px) {
+        width: 15px;
+        height: 4px;
+        &-active {
+            width: 30px;
+            height: 4px;
+        }
+    }
+    @media screen and (min-width: 1200px) {
+        width: 20px;
+        height: 5px;
+        &-active {
+            width: 40px;
+            height: 5px;
+        }
+    }
+}
+
 .swiper-pagination {
     position: static;
 }
@@ -304,11 +339,11 @@
 .service-svg {
     width: 10px;
     height: 10px;
-    @media (min-width: 814px) {
+    @media screen and (min-width: 814px) {
         width: 15px;
         height: 15px;
     }
-    @media (min-width: 1200px) {
+    @media screen and (min-width: 1200px) {
         width: 20px;
         height: 20px;
     }
