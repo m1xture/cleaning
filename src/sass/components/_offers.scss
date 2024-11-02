@@ -2,88 +2,120 @@
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: $bgAccentColor;
-    min-height: 100vh; // Фон завжди повний
+    min-height: 100vh;
     .container {
         display: flex;
-        justify-content: space-between;
-        margin-top: 30px;
+        flex-direction: column;
+        align-items: center;
+        @media (min-width: 814px) {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        @media (min-width: 1200px) {
+            justify-content: space-between;
+            margin-top: 30px;
+        }
     }
     .offers__title {
         font-family: 'Playfair Display';
-        font-size: 32px;
+        font-size: 12px;
         font-weight: 400;
-        line-height: 43px;
+        line-height: 13px;
         letter-spacing: 0%;
         color: $textColor;
         text-align: center;
+        @media (min-width: 814px) {
+            font-size: 24px;
+            line-height: 43px;
+        }
+        @media (min-width: 1200px) {
+            font-size: 32px;
+        }
     }
-    .services-box {
-        flex: 1;
-    }
+    .services-box,
     .cleaners-box {
-        flex: 1;
+        text-align: center;
+        margin: 20px 0;
+        @media (min-width: 814px) {
+            text-align: left;
+        }
     }
 }
 
 .services__title {
     font-family: 'Playfair Display';
-    font-size: 32px;
+    font-size: 10px;
     font-weight: 400;
-    line-height: 43px;
-    letter-spacing: 0%;
+    line-height: 13px;
+    text-align: center;
     color: $textColor;
-    text-align: left; // За замовчуванням вирівнювання зліва
-}
-
-.services__list {
-    display: flex;
-    flex-direction: column;
-    list-style-type: disc;
-    margin-top: 30px;
-}
-
-.services__description {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 250%;
-    text-align: left;
-    color: $textColor;
+    @media (min-width: 814px) {
+        font-size: 24px;
+        line-height: 43px;
+    }
+    @media (min-width: 1200px) {
+        font-size: 32px;
+    }
 }
 
 .cleaners__title {
     font-family: 'Playfair Display';
-    font-size: 32px;
+    font-size: 12px;
     font-weight: 400;
     line-height: 43px;
-    letter-spacing: 0%;
     text-align: center;
     color: $textColor;
+    @media (min-width: 814px) {
+        font-size: 24px;
+        line-height: 43px;
+    }
+    @media (min-width: 1200px) {
+        font-size: 32px;
+    }
 }
 
 .cleaners__list {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
     gap: 30px;
     margin-top: 30px;
-    margin-left: 40px;
-    width: 700px;
+    max-width: 100%;
+    grid-template-columns: 1fr;
+    @media (min-width: 814px) {
+        grid-template-columns: 1fr;
+        max-width: 100%;
+        margin-left: 0;
+    }
+    @media (min-width: 1200px) {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 700px;
+        margin-left: 40px;
+    }
 }
 
 .cleaners__item {
-    border-radius: 10px;
-    box-shadow: $boxShadow;
-    background-color: rgb(255, 255, 255);
-    width: 317px;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    padding-left: 17px;
+    width: 260px;
+    height: 50px;
+    text-align: center;
     display: flex;
     gap: 20px;
+    padding: 12px 17px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: $boxShadow;
+    @media (min-width: 814px) {
+        width: 248px;
+        height: 80px;
+    }
+    @media (min-width: 1200px) {
+        width: 317px;
+        height: 100px;
+    }
 }
 
 .cleaners-photo-box {
-    width: 75px;
-    height: 75px;
+    width: 30px;
+    height: 30px;
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -93,15 +125,31 @@
     & img {
         width: 175px;
     }
+    @media (min-width: 814px) {
+        width: 50px;
+        height: 50px;
+    }
+    @media (min-width: 1200px) {
+        width: 75px;
+        height: 75px;
+    }
 }
 
 .name__title {
     font-family: 'Quicksand';
     font-weight: 400;
-    font-size: 16px;
-    line-height: 200%;
-    letter-spacing: 0%;
+    font-size: 8px;
+    line-height: 1.8;
     text-align: left;
+    margin-left: 5px;
+    margin-top: 5px;
+    @media (min-width: 814px) {
+        font-size: 10px;
+        margin-top: 5px;
+    }
+    @media (min-width: 1200px) {
+        font-size: 16px;
+    }
 }
 
 .cleaners__item {
@@ -112,7 +160,8 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 390px;
+    width: 260px;
+    height: 155px;
     pointer-events: none;
     border: 1px solid rgb(0, 0, 0);
     border-radius: 10px;
@@ -122,193 +171,127 @@
     opacity: 0;
     transition: opacity 0.5s ease;
     z-index: 1;
+    @media (min-width: 814px) {
+        width: 280px;
+        height: 270px;
+    }
+    @media (min-width: 1200px) {
+        width: 390px;
+        height: 350px;
+    }
 }
 
 .cleaners__item:hover .additional-text {
-    opacity: 1; // При ховері текст з'являється
+    opacity: 1;
 }
 
 .name__title-hover {
     position: relative;
-    margin-left: 170px;
-    top: -100px;
+    font-size: 10px;
+    margin-left: 50px;
+    top: -30px;
+    margin-right: -40px;
+    @media (min-width: 814px) {
+        font-size: 14px;
+        margin-left: 100px;
+        top: -70px;
+    }
+    @media (min-width: 1200px) {
+        font-size: 14px;
+        margin-left: 170px;
+        top: -100px;
+    }
 }
 
 .cleaners-photo-box-hover {
-    width: 125px;
-    height: 125px;
+    width: 30px;
+    height: 30px;
+    @media (min-width: 814px) {
+        width: 75px;
+        height: 75px;
+    }
+    @media (min-width: 1200px) {
+        width: 125px;
+        height: 125px;
+    }
 }
 
 .container_title-hover {
-    margin-top: -50px;
+    margin-top: -10px;
     display: flex;
     flex-direction: column;
+    @media (min-width: 814px) {
+        margin-top: -50px;
+    }
 }
 
 .title-hover {
-    font-size: 20px;
+    font-size: 8px;
     font-weight: 400;
-    margin-bottom: 35px;
+    margin-bottom: 15px;
     letter-spacing: 0%;
     text-align: left;
     display: inline;
+    @media (min-width: 814px) {
+        font-size: 12px;
+    }
+    @media (min-width: 1200px) {
+        font-size: 18px;
+    }
     &:nth-child(3n) {
         margin-bottom: 0;
     }
 }
 
 .cleaners__subtext {
-    font-size: 14px;
+    font-size: 6px;
     line-height: 1.1;
     display: inline;
+    @media (min-width: 814px) {
+        font-size: 10px;
+    }
+    @media (min-width: 1200px) {
+        font-size: 14px;
+    }
 }
 
 .offers__star-list {
     display: flex;
-    @media (min-width: 1200px) {
-        justify-content: center;
-        align-items: center;
-        margin-left: -15px;
-    }
+    align-items: center;
 }
 
 .title-hover-star {
-    margin-right: 5px; // Додаємо відступ між заголовком і зірками
+    margin-right: 5px;
 }
 
-
-/* Медіа-запити */
-
-
-/* Для планшетів (до 1200px) */
-
-@media (max-width: 1200px) {
-    .container {
-        flex-direction: row;
-        justify-content: space-between;
+.offers-star {
+    width: 15px;
+    height: 15px;
+    @media (min-width: 814px) {
+        width: 20px;
+        height: 20px;
     }
-    .services-box {
-        text-align: right;
-    }
-    .cleaners-box {
-        margin-left: auto;
-    }
-    .services__title {
-        font-size: 20px;
-        line-height: 27px;
-    }
-    .services__description {
-        font-size: 12px;
-    }
-    .cleaners__title {
-        font-size: 20px;
-    }
-    .cleaners__list {
-        width: 317px;
-    }
-    .cleaners__item {
-        width: 248px;
-        height: 80px;
-    }
-    .cleaners-photo-box {
-        width: 50px;
-        height: 50px;
-    }
-    .name__title {
-        font-size: 10px;
-        line-height: 180%;
-    }
-    .cleaners-photo-box-hover {
-        width: 60px;
-        height: 60px;
-    }
-    .name__title-hover {
-        font-size: 14px;
-        margin-left: 70px;
-        top: -50px;
-    }
-    .container_title-hover {
-        margin-top: -20px;
-    }
-    .title-hover {
-        font-size: 16px;
-        margin-bottom: 20px;
-    }
-    .cleaners__subtext {
-        font-size: 12px;
-    }
-}
-
-
-/* Для мобільних пристроїв (до 850px) */
-
-@media (max-width: 814px) {
-    .container {
-        flex-direction: column;
-        align-items: center;
-    }
-    .services-box {
-        margin-right: 0;
-        order: 1;
-        text-align: center;
-    }
-    .cleaners-box {
-        margin-left: 0;
-        margin-top: 20px;
-        order: 2;
-        text-align: center;
-    }
-    .services__title {
-        font-size: 10px;
-        line-height: 13px;
-        text-align: center;
-    }
-    .services__description {
-        font-size: 8px;
-    }
-    .cleaners__title {
-        font-size: 15px;
-    }
-    .cleaners__item {
-        width: 100%;
-        max-width: 260px;
-        height: 50px;
-        text-align: center;
-    }
-    .cleaners-photo-box {
+    @media (min-width: 1200px) {
         width: 30px;
         height: 30px;
     }
-    .name__title {
-        font-size: 8px;
-        text-align: left;
-        display: inline-block;
+}
+
+.offers-name-and-surname-box {
+    display: flex;
+    @media (min-width: 814px) {
+        display: block;
     }
-    .name__title-hover {
-        font-size: 10px;
-        margin-left: 50px;
-        top: -30px;
-    }
-    .container_title-hover {
-        margin-top: -10px;
-    }
-    .title-hover {
-        font-size: 10px;
-        margin-bottom: 15px;
-    }
-    .cleaners__subtext {
-        font-size: 8px;
-    }
-    .additional-text {
-        width: 260px;
-        height: 195px;
-    }
-    .offers-star {
-        width: 10px;
-        height: 10px;
-    }
-    .offers-name-and-surname-box h2.name__title-hover:nth-child(2) {
-        margin-left: -1px;
-        gap: 10px;
-    }
+}
+
+.offers-name-and-surname-box:not(:last-child) {
+    margin-right: 5px;
+}
+
+.services__list-2 {
+    flex-direction: column;
+    margin-top: 30px;
+    margin-left: 50px;
+    list-style-type: disc;
+    display: flex;
 }

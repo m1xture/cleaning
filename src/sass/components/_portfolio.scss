@@ -1,12 +1,18 @@
 .portfolio__title {
     color: $textColor;
     font-family: 'Playfair Display';
-    font-size: 32px;
+    font-size: 10px;
     font-weight: 400;
     line-height: 43px;
     letter-spacing: 0%;
     justify-content: center;
     text-align: center;
+    @media (min-width: 814px) {
+        font-size: 20px;
+    }
+    @media (min-width: 1200px) {
+        font-size: 32px;
+    }
 }
 
 .portfolio__navigation {
@@ -16,10 +22,18 @@
 }
 
 .portfolio__img {
-    width: 785px;
-    height: 398px;
-    margin: 0 auto; // додано для центрування зображення
-    display: block; // додано для того, щоб margin: auto працював
+    width: 260px;
+    height: 144px;
+    margin: 0 auto;
+    display: block;
+    @media (min-width: 814px) {
+        width: 516px;
+        height: 290px;
+    }
+    @media (min-width: 1200px) {
+        width: 885px;
+        height: 498px;
+    }
 }
 
 .portfolio__design {
@@ -28,7 +42,7 @@
     height: 5px;
     border-radius: 10px;
     background: $controllerUnactive;
-    transition: all 0.5s ease-in-out; // Додано для плавної зміни розміру та кольору
+    transition: all 0.5s ease-in-out;
 }
 
 .portfolio__design.active {
@@ -46,14 +60,38 @@
     margin-right: 25px;
 }
 
+.services__description {
+    font-size: 8px;
+    font-weight: 400;
+    line-height: 250%;
+    text-align: center;
+    color: $textColor;
+    @media (min-width: 814px) {
+        font-size: 12px;
+        text-align: left;
+    }
+    @media (min-width: 1200px) {
+        font-size: 16px;
+    }
+}
+
 .portfolio__text {
     color: $textColor;
     font-family: 'Quicksand';
-    font-size: 18px;
+    font-size: 10px;
     font-weight: 400;
     line-height: 30px;
     letter-spacing: 0%;
     text-align: left;
+    width: 400px;
+    @media (min-width: 814px) {
+        font-size: 12px;
+        width: 420px;
+        margin-right: 50px;
+    }
+    @media (min-width: 1200px) {
+        font-size: 16px;
+    }
 }
 
 .portfolio__list {
@@ -65,30 +103,82 @@
     padding-top: 108px;
     padding-bottom: 100px;
     background: $bgAccentColor;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.portfolio-services-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media (min-width: 1200px) {
+        flex-direction: row;
+        gap: 300px;
+    }
+}
+
+.portfolio__list,
+.services__list {
+    margin-top: 20px;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    @media (min-width: 1200px) {
+        align-items: flex-start;
+    }
+}
+
+.services__list {
+    display: flex;
+    flex-direction: column;
+    list-style-type: disc;
+    margin-top: 30px;
+    margin-left: 50px;
 }
 
 .portfolio__button {
-    width: 200px;
-    height: 54px;
+    width: 93px;
+    height: 26px;
     border-radius: 10px;
-    display: flex;
     align-items: center;
     text-align: center;
     justify-content: center;
     background: $accentColor;
     color: $textSecondaryColor;
-    font-size: 20px;
+    font-size: 8px;
     font-weight: 500;
     line-height: 25px;
     letter-spacing: 0%;
     margin-top: 10px;
+    margin-right: 90px;
+    @media (min-width: 814px) {
+        width: 191px;
+        height: 48px;
+        font-size: 14px;
+    }
+    @media (min-width: 1200px) {
+        width: 258px;
+        height: 55px;
+        font-size: 20px;
+        display: flex;
+    }
 }
 
 .swiper {
-    width: 1005px;
-    height: 498px;
+    width: 100%;
+    height: auto;
     z-index: 0;
     margin-top: 60px;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .swiper-button-next,
@@ -98,6 +188,8 @@
     --swiper-navigation-sides-offset: 10px;
     --swiper-navigation-size: 55px;
     --swiper-navigation-color: var(--swiper-theme-color);
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .swiper-pagination-bullet {
@@ -116,16 +208,18 @@
 
 .swiper-button-prev {
     color: rgb(25, 25, 25);
+    display: none;
+    @media (min-width: 814px) {
+        display: block;
+    }
 }
 
 .swiper-button-next {
     color: rgb(25, 25, 25);
-}
-
-.portfolio-services-box {
-    display: flex;
-    gap: 300px;
-    align-items: center;
+    display: none;
+    @media (min-width: 814px) {
+        display: block;
+    }
 }
 
 .services-price-hover-box {
@@ -151,11 +245,17 @@
 }
 
 .services-price-hover__text {
-    font-size: 14px;
+    font-size: 8px;
     font-weight: 400;
     line-height: 250%;
     text-align: left;
     color: $textColor;
+    @media (min-width: 814px) {
+        font-size: 12px;
+    }
+    @media (min-width: 1200px) {
+        font-size: 14px;
+    }
 }
 
 .services-price-hover__item {
@@ -169,11 +269,17 @@
         margin-left: -18px;
     }
     & p {
-        font-size: 14px;
+        font-size: 8px;
         font-weight: 400;
         line-height: 250%;
         // text-align: left;
         color: $textColor;
+        @media (min-width: 814px) {
+            font-size: 12px;
+        }
+        @media (min-width: 1200px) {
+            font-size: 14px;
+        }
     }
 }
 
@@ -185,8 +291,25 @@
 .swiper-pagination-bullets.swiper-pagination-horizontal,
 .swiper-pagination-custom,
 .swiper-pagination-fraction {
-    bottom: var(--swiper-pagination-bottom, 65px);
+    top: var(--swiper-pagination-bottom, 65px);
     top: var(--swiper-pagination-top, auto);
     left: 0;
     width: 100%;
+}
+
+.swiper-pagination {
+    position: static;
+}
+
+.service-svg {
+    width: 10px;
+    height: 10px;
+    @media (min-width: 814px) {
+        width: 15px;
+        height: 15px;
+    }
+    @media (min-width: 1200px) {
+        width: 20px;
+        height: 20px;
+    }
 }
